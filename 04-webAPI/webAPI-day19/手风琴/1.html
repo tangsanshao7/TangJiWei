@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/index.css">
+
+<body>
+  <ul class="container clearfix">
+    <li>
+      <h4>园林酒店</h4>
+    </li>
+    <li>
+      <h4>情侣酒店</h4>
+    </li>
+
+    <li>
+      <h4>设计师酒店</h4>
+    </li>
+    <li>
+      <h4>青年旅舍</h4>
+    </li>
+    <li>
+      <h4>特色客栈</h4>
+    </li>
+
+    <li>
+      <h4>海岛酒店</h4>
+    </li>
+    <li>
+      <h4>海外温泉</h4>
+    </li>
+  </ul>
+  <script src="./index.js"></script>
+  <script>
+    // let ul = document.querySelector('.container')
+    // let li = ul.querySelectorAll('li')
+    // // console.log(ul,li)
+    // for (let i = 0; i < li.length; i++) {
+    //   li[i].style.backgroundImage = `url(./images/ifold${i + 1}.jpg)`
+    //   li[i].addEventListener('mouseenter', function () {
+    //     for (let j = 0; j < li.length; j++) {
+    //       animate(li[j], {
+    //         width: 133
+    //       })
+    //     }
+    //     animate(this, {
+    //       width: 400
+    //     })
+    //   })
+    // }
+
+
+    // let ul = document.querySelector('.container')
+    // let li = ul.querySelectorAll('li')
+    // // console.log(ul,li)
+    // for (let i = 0; i < li.length; i++) {
+    //   li[i].style.backgroundImage = `url(./images/ifold${i + 1}.jpg)`
+    //   li[i].addEventListener('mouseenter', function () {
+    //     for (let j = 0; j < li.length; j++) {
+    //       animate(li[j], {
+    //         width: 133
+    //       })
+    //     }
+    //     animate(this, {
+    //       width: 400
+    //     })
+    //   })
+    // }
+
+
+
+    let ul = document.querySelector('.container')
+    let li = ul.querySelectorAll('li')
+    // console.log(ul,li)
+    for (let i = 0; i < li.length; i++) {
+      li[i].style.backgroundImage = `url(./images/ifold${i + 1}.jpg)`
+      li[i].addEventListener('mouseenter', function () {
+        for (let j = 0; j < li.length; j++) {
+          animate(li[j], {
+            width: 133
+          })
+        }
+        animate(this, {
+          width: 400
+        })
+      })
+    }
+
+  </script>
+</body>
+
+</html>

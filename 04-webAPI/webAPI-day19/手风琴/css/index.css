@@ -1,0 +1,30 @@
+.container{
+  width: 1200px;
+  margin:100px auto;
+}
+
+.container li {
+   float: left;
+   width: 133px;
+   height: 260px;
+   background-position: center;
+   position: relative;
+   
+ 
+}
+
+.container li:first-child{
+  width: 400px;
+}
+
+.container li h4{
+  width:30px;
+  font-size:28px;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  top:20%;
+  left:50%;
+  transform: translate(-50%);
+
+}

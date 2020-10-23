@@ -1,0 +1,513 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: red;
+  cursor: pointer;
+  z-index: 1;
+}
+header .header-logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 58px;
+  height: 20px;
+  background-position: 0px -109px;
+}
+header .header-search {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  padding-left: 78px;
+  padding-right: 55px;
+}
+header .header-search i {
+  position: absolute;
+  top: 10px;
+  left: 84px;
+  width: 20px;
+  height: 20px;
+  background-position: -59px -109px;
+}
+header .header-search input {
+  border: none;
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding-left: 30px;
+}
+header .header-login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40px;
+  width: 54px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 14px;
+}
+main {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding-top: 40px;
+  padding-bottom: 44px;
+  /* 3.3 主体-秒杀 */
+}
+main .carousel {
+  width: 100%;
+  overflow-x: auto;
+}
+main .carousel ul {
+  width: 1000%;
+  overflow: hidden;
+}
+main .carousel li {
+  float: left;
+  width: 10%;
+}
+main .carousel a {
+  width: 100%;
+  display: block;
+}
+main .carousel img {
+  width: 100%;
+}
+main .nav {
+  width: 100%;
+  background-color: #fff;
+  padding-top: 10px;
+}
+main .nav ul {
+  width: 100%;
+  overflow: hidden;
+}
+main .nav li {
+  float: left;
+  width: 25%;
+  margin-bottom: 10px;
+}
+main .nav a {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+main .nav img {
+  width: 40px;
+  height: 40px;
+}
+main .nav span {
+  display: block;
+  margin-top: 5px;
+}
+main .active {
+  position: relative;
+  width: 100%;
+}
+main .active img {
+  width: 100%;
+}
+main .active ul {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  padding: 0 10px;
+}
+main .active ul li {
+  float: left;
+  width: 50%;
+}
+main .active ul li a {
+  display: block;
+  width: 100%;
+}
+main .seckill {
+  width: 100%;
+  margin-top: 5px;
+  background-color: #fff;
+}
+main .seckill .seckill-title {
+  padding: 0 10px;
+  width: 100%;
+  height: 30px;
+}
+main .seckill .seckill-title h3 {
+  position: relative;
+  float: left;
+  line-height: 32px;
+  font-weight: normal;
+  padding-left: 24px;
+  font-size: 16px;
+  color: #c91523;
+}
+main .seckill .seckill-title h3:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 18px;
+  height: 24px;
+  background-image: url(../image/jd-sprites.png);
+  background-size: 200px 200px;
+  background-position: -84px -109px;
+}
+main .seckill .seckill-title .time {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  /* odd(奇数) even(偶数) */
+}
+main .seckill .seckill-title .time span:nth-child(odd) {
+  background-color: black;
+  color: #fff;
+  padding: 0 2px;
+  padding-top: 1px;
+  border-radius: 3px;
+}
+main .seckill .seckill-title .more {
+  float: right;
+  color: #666;
+  line-height: 30px;
+}
+main .seckill .seckill-list {
+  width: 100%;
+  padding: 0 10px;
+  padding-bottom: 15px;
+}
+main .seckill .seckill-list ul {
+  width: 100%;
+  overflow: hidden;
+}
+main .seckill .seckill-list li {
+  float: left;
+  width: 33.333333%;
+}
+main .seckill .seckill-list li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+main .seckill .seckill-list li a span {
+  position: absolute;
+  right: 5px;
+  bottom: 0;
+  height: 20px;
+  padding: 0 5px;
+  background-color: #fdb60a;
+  color: #fff;
+  border-radius: 50%;
+  /* text-align: center; */
+  line-height: 20px;
+  font-size: 12px;
+}
+main .seckill .seckill-list li a img {
+  width: 100%;
+}
+main .seckill .seckill-list li b,
+main .seckill .seckill-list li s {
+  display: block;
+  text-align: center;
+}
+main .seckill .seckill-list li b {
+  font-weight: normal;
+  font-size: 16px;
+  color: #c91523;
+  margin-bottom: 5px;
+}
+main .seckill .seckill-list li s {
+  font-weight: normal;
+  font-size: 12px;
+  color: #666;
+  text-decoration: line-through;
+}
+main .product {
+  width: 100%;
+}
+main .product ul {
+  width: 100%;
+}
+main .product ul li {
+  width: 100%;
+  overflow: hidden;
+}
+main .product ul li a {
+  float: left;
+  width: 33.33333%;
+}
+main .product ul li a img {
+  width: 100%;
+}
+main .product ul li:nth-child(2) a {
+  width: 50%;
+}
+main .adv {
+  width: 100%;
+}
+main .adv a {
+  width: 100%;
+}
+main .adv a img {
+  width: 100%;
+}
+main .market {
+  width: 100%;
+  margin-top: 5px;
+  padding: 0 10px;
+  background-color: #fff;
+}
+main .market .market-title {
+  height: 30px;
+  font-size: 16px;
+  color: #f25353;
+  line-height: 30px;
+  font-weight: normal;
+}
+main .market ul {
+  width: 100%;
+}
+main .market ul li {
+  width: 50%;
+  overflow: hidden;
+  float: left;
+}
+main .market ul li a {
+  display: block;
+  width: 100%;
+}
+main .market ul li a img {
+  width: 100%;
+}
+main .theme {
+  width: 100%;
+}
+main .theme ul {
+  width: 100%;
+}
+main .theme ul li {
+  width: 100%;
+  overflow: hidden;
+}
+main .theme ul li a {
+  float: left;
+}
+main .theme ul li a img {
+  width: 100%;
+}
+main .theme ul li:first-child a {
+  width: 50%;
+}
+main .theme ul li:first-child a:nth-last-child(-n + 2) {
+  width: 25%;
+}
+main .theme ul li:last-child a {
+  width: 25%;
+}
+main .brand {
+  width: 100%;
+  background-color: #fff;
+}
+main .brand .brand-title {
+  height: 30px;
+  font-size: 16px;
+  color: #f25353;
+  line-height: 30px;
+  font-weight: normal;
+  padding-left: 10px;
+}
+main .brand ul {
+  width: 100%;
+  overflow: hidden;
+}
+main .brand ul li {
+  width: 30%;
+  float: left;
+}
+main .brand ul li a {
+  display: block;
+  width: 100%;
+}
+main .brand ul li a img {
+  width: 100%;
+}
+main .brand ul li:nth-child(1) {
+  width: 40%;
+}
+main .guess {
+  width: 100%;
+  background-color: #fff;
+}
+main .guess .guess-title {
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  line-height: 30px;
+}
+main .guess .guess-title h3 {
+  float: left;
+  font-weight: lighter;
+  font-size: 16px;
+  color: #666;
+}
+main .guess .guess-title a {
+  position: relative;
+  float: right;
+  color: #f25353;
+}
+main .guess .guess-title a:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -22px;
+  width: 18px;
+  height: 18px;
+  background-image: url(../image/icon-login.png);
+  background-size: 18px 18px;
+}
+main .guess .guess-list {
+  width: 100%;
+}
+main .guess .guess-list ul {
+  width: 100%;
+  overflow: hidden;
+}
+main .guess .guess-list ul li {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+  padding-bottom: 10px;
+}
+main .guess .guess-list ul li > a {
+  display: block;
+  width: 100%;
+}
+main .guess .guess-list ul img {
+  width: 100%;
+  padding: 15px 0;
+}
+main .guess .guess-list ul p {
+  /* 1.规定p标签的宽度 */
+  width: 100%;
+  /* 2.让文字超出以后自动出现省略号(ellipsis) */
+  text-overflow: ellipsis;
+  /* 3.规定p标签的显示方式 */
+  display: -webkit-box;
+  /* 4.规定文字显示几行 */
+  -webkit-line-clamp: 2;
+  /* 5.设置排列方式 横向和竖向  */
+  -webkit-box-orient: vertical;
+  /* 6. 换行方式 单词换行 不论是不是单词 换行 */
+  /* word-break: normal; */
+  word-break: break-all;
+  /* 隐藏多余的文字 */
+  overflow: hidden;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+main .guess .guess-list ul .guess-list-price {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  overflow: hidden;
+}
+main .guess .guess-list ul .guess-list-price b {
+  line-height: 20px;
+  color: #f25353;
+  font-weight: normal;
+}
+main .guess .guess-list ul .guess-list-price a {
+  float: right;
+  color: #999;
+  border: 1px solid #999;
+  border-radius: 2px;
+  padding: 0 2px;
+  padding-top: 2px;
+}
+main .footer {
+  width: 100%;
+}
+main .footer .load-more {
+  display: block;
+  width: 100%;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-top: 1px solid #ccc;
+  color: #666;
+  font-size: 14px;
+}
+main .footer .feedback {
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  padding: 15px 0;
+}
+main .footer .feedback a {
+  color: #999;
+  font-size: 12px;
+  padding: 0 24px;
+  border-right: 1px solid #ccc;
+}
+main .footer .feedback a:last-child {
+  border-right: none;
+}
+main .footer .version {
+  border-top: 1px solid #ccc;
+  text-align: center;
+  padding-top: 60px;
+}
+main .footer .version a {
+  position: relative;
+  font-size: 12px;
+  padding: 0 24px;
+  color: #999;
+}
+main .footer .version a:before {
+  content: "";
+  position: absolute;
+  top: -35px;
+  left: 25px;
+  width: 33px;
+  height: 33px;
+  background: url(../image/jd-sprites.png);
+  background-size: 200px 200px;
+}
+main .footer .version a:nth-child(1)::before {
+  background-position: -120px -70px;
+}
+main .footer .version a:nth-child(2)::before {
+  background-position: -40px -70px;
+}
+main .footer .version a:nth-child(3)::before {
+  background-position: -80px -70px;
+}
+main .footer p {
+  border-top: 1px solid #ccc;
+  padding: 15px 0;
+  text-align: center;
+}
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 44px;
+  background-color: #fff;
+}
+nav a {
+  flex: 1;
+  height: 100%;
+  text-align: center;
+}
+nav a img {
+  width: auto;
+  height: 100%;
+}

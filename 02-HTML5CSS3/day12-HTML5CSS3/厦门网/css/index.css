@@ -1,0 +1,272 @@
+.topnav {
+  width: 100%;
+  height: 36px;
+  background-color: #fbfbfb;
+}
+
+.topnav-left {
+  float: left;
+  padding-left: 14px;
+  box-sizing: border-box;
+}
+.topnav-left a {
+  font-size: 12px;
+  color: #717171;
+  line-height: 36px;
+}
+.topnav-left > a:nth-child(1) {
+  float: left;
+}
+.topnav-left ul {
+  float: left;
+}
+.topnav-left li {
+  float: left;
+}
+
+.topnav-left i {
+  line-height: 36px;
+  color: #717171;
+  margin: 0 12px;
+}
+
+.topnav-right {
+  float: right;
+}
+
+.topnav-right li {
+  float: left;
+}
+.topnav-right s {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  background: url(../img/topnav-right.png) no-repeat;
+  margin-right: 5px;
+}
+
+.topnav-right li:nth-child(2) s {
+  background-position-x: -60px;
+}
+.topnav-right li:nth-child(3) s {
+  background-position-x: -120px;
+}
+
+.topnav-right li:nth-child(-n + 3) {
+  margin-right: 12px;
+}
+.topnav-right a {
+  font-size: 12px;
+  color: #717171;
+  line-height: 36px;
+}
+
+.topnav-right i {
+  line-height: 36px;
+  color: #717171;
+}
+.topnav-right li:nth-child(3) i {
+  margin-left: 12px;
+}
+.topnav-right li:nth-child(4) i {
+  margin-right: 12px;
+}
+
+.topnav-right img {
+  margin: 0 12px;
+}
+.searchnav {
+  height: 184px;
+  width: 100%;
+  background-image: url(../img/ad_bg.png);
+  background-repeat: repeat-x;
+}
+
+.searchnav-ad {
+  height: 70px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.searchnav-search {
+  width: 100%;
+  height: 106px;
+  border-top: 1px solid #eeeee7;
+  padding-top: 12px;
+  box-sizing: border-box;
+}
+.searchnav-search>img {
+  float: left;
+}
+.search {
+  float: left;
+  margin-left: 64px;
+  width: 477px;
+
+}
+
+.search li {
+  float: left;
+}
+.search li:nth-child(n+1) i{
+  margin: 0 12px;
+}
+.search li a{
+  font-size: 12px;
+  color: #424242;
+
+}
+.search li:first-child a{
+  font-weight: 700  ;
+}
+.search li img{
+  margin-left:  5px;
+}
+
+.search-input{
+  height: 25px;
+    width: 477px;
+  box-sizing: border-box;
+  border: 1px solid #cdbbae;
+  margin-top: 20px;
+  background: url(../img/fdj.png) no-repeat 7px center;
+}
+.search-input input{
+  width: 380px;
+  height: 100%;
+  border: none;
+  float: right;
+  color: #aaa;
+}
+.search-input button{
+  float: right;
+  width: 64px;
+  height: 100%;
+  background: url(../img/search-button.png);
+  color: #fff;
+  border: none;
+}
+.search-input ul{
+  float: left;
+  width: 100%;  
+  margin-top: 10px;
+}
+.search-input li:first-child{
+  font-weight: 700;
+  margin-right: 5px;
+}
+.search-input li:nth-child(n+2){
+  margin-right: 20px;
+}
+
+.nav{
+  height: 44px;
+  width: 100%;
+  background-color: #ca5000;
+  border: 2px solid #d57433;
+  box-sizing: border-box;
+}
+
+.nav li{
+  float: left;
+  height: 40px;
+  line-height: 40px;
+
+  box-sizing: border-box;
+}
+.nav s{
+  float: left;
+  line-height: 40px;
+  margin: 0 13px;
+  color: #b35500;
+}
+.nav li:first-child{
+  background-color: #9b3a00;
+  padding: 0 10px;
+  margin-right: 19px;
+
+}
+
+.nav .hot{
+position: relative;
+
+}
+.hot img{
+  position: absolute;
+  top: -7px;
+  left: 34px;
+}
+.nav li a {
+  font-size: 16px;
+  color: #fff;
+}
+.nav .sj {
+  position: relative;
+}
+.nav .sj::after{
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color:#772900 ;
+  z-index: 2;
+}
+
+.value{
+  height: 47px;
+  background-color: #fff1e3;
+  box-sizing: border-box;
+  border: 1px solid #eadacb;
+}
+
+.username,
+.password{
+  float: left;
+  line-height: 47px;
+  
+}
+.username {
+  margin:0 12px 0  24px ;
+}
+
+.username input,
+.password input{
+  width: 117px;
+  height: 25px;
+  box-sizing: border-box;
+  border: 1px solid #d3ad90;
+  background-color: #fffcf9;
+  margin-left: 8px;
+}
+
+.value .button{
+  float: left;
+  width: 56px;
+  height: 25px;
+  background-color: #881100;
+  border: 1px solid #700a00;
+  color: #fff;
+  margin-top: 12px;
+  margin-left: 8px;
+}
+
+.value .txt{
+  float: left;
+  margin-left: 12px;
+  color: #002871;
+  font-size: 12px;
+  line-height: 47px;
+}
+
+.value .qq{
+  float: left;
+  margin-left: 20px;
+  margin-top: 12px;
+}
+.value .bowen{
+  float: right;
+  margin-right: 24px;
+}

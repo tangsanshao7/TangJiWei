@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+
+<body>
+  <div style="margin-left: 500px; margin-top: 100px; background-color: #999999">
+    <select multiple="multiple" style="float: left; width: 60px; height: 100px;" id="se1">
+      <option>添加</option>
+      <option>删除</option>
+      <option>修改</option>
+      <option>查询</option>
+      <option>打印</option>
+    </select>
+    <div style="width: 50px; float: left;">
+      <input type="button" name="name" value=">" style="width: 50px;" id="toRight" />
+      <input type="button" name="name" value="<" style="width: 50px;" id="toLeft" />
+      <input type="button" name="name" value=">>" style="width: 50px;" id="toAllRight" />
+      <input type="button" name="name" value="<<" style="width: 50px;" id="toAllLeft" />
+    </div>
+    <select multiple="multiple" style="float: left; width: 60px; height: 100px;" id="se2">
+    </select>
+  </div>
+  <script>
+
+    var left = document.getElementsByTagName("select")[0];//左边列表
+    var right = document.getElementsByTagName('select')[1];//右边列表
+    var btn1 = document.getElementsByTagName('input')[0];//全部右移
+    var btn2 = document.getElementsByTagName('input')[1];//全部左移
+    var btn3 = document.getElementsByTagName('input')[2];//选中右移
+    var btn4 = document.getElementsByTagName('input')[3];//选中左移
+
+    console.log(left);
+    console.log(right);
+    console.log(btn1);
+    console.log(btn2);
+    console.log(btn3);
+    console.log(btn4);
+
+    //2.1 选中右移 
+    btn1.onclick = function () {
+      moveSelect(left, right)
+    }
+
+    //2.2 选中左移
+    btn2.onclick = function () {
+      moveSelect(right, left);
+    }
+    //2.3 全部右移
+    btn3.onclick = function () {
+      moveAll(left, right);
+    }
+
+    //2.4全部左移 
+    btn4.onclick = function () {
+      moveAll(right, left);
+    }
+
+    /**
+     * 全部移动
+     * @param form  要移出的元素
+     * @param to     要移入的元素
+     */
+    function moveAll(form, to) {
+      for (var i = 0; i < form.children.length; i++) {
+        //当移动数组的元素时，数组中该元素后面所有的元素下标前移
+        to.appendChild(form.children[i]);
+        i--;//i--抵消本次i++
+      }
+    }
+
+    /**
+     * 移动选中的选项
+     * @param form  要移出的
+     * @param to  要移入的
+     */
+    function moveSelect(form, to) {
+      //3.点击选中右移，left选中的子元素移动到right
+      for (var i = 0; i < form.children.length; i++) {
+        if (form.children[i].selected == true) {
+          to.appendChild(form.children[i]);
+          //只要遍历数组的时候，数组元素发生移动，后面的下标就会前移，所以本次循环变量i不能自增
+          i--;
+        }
+      }
+    }
+
+
+  </script>
+</body>
+
+</html>

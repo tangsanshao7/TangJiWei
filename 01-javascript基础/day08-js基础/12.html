@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 12.利用JavaScript完成输出如下图形（由“空格”和“*”这两种符号组成）
+      //      *                      *********
+      //      ***                   *******
+      //      *****                *****
+      //      *******             ***
+      //      *********          *
+
+      for (i = 0; i < 5; i++) {
+        for (j = 0; j < i + 5; j++) {
+          if (j >= 5 - 1 - i) {
+              document.write("*");
+          }
+        }
+        document.write("<br>");
+      }
+      
+      
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<br>");
+
+
+      for (var n = 1; n <= 5; n++) {
+       
+            for (var s = 1; s < 2 * (5 - n + 1); s++) {
+                document.write("*");
+            }
+            document.write("<br/>");
+        }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body,
+    div,
+    p{
+      margin: 0;
+      padding: 0;
+    }
+    ul,
+    li{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      width: 1474px;
+      height: 320px;
+      margin: 100px auto;
+      box-sizing: border-box;
+    }
+
+    .box-title {
+      height: 42px;
+      font-size: 20px;
+      border-bottom: 3px solid #3884e5;
+      line-height: 40px;
+    }
+
+    .box-title div {
+      float: left;
+    }
+
+    .box-title-right {
+      margin-left: 38px;
+      color: #0768d4;
+      position: relative; 
+    }
+.box-title-right::after{
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: -2px;
+    left: 40px;
+  border: 9px solid  transparent;
+  border-bottom-color:#3884e5 ;
+}
+    .box-top {
+      height: 56px;
+      border-left: 1px solid #e7dbe6;
+      border-right: 1px solid #e7dbe6;
+      padding :0 24px;
+      box-sizing: border-box;
+
+    }
+
+    .box-top-left {
+      float: left;
+      width: 50px;
+      height: 25px;
+      background-color: #3884e5;
+      border-radius: 4px;
+      color: #ffffff;
+      margin-top: 19px;
+      line-height: 25px;
+      text-align: center;
+    }
+
+    .box-top-right {
+      float: right;
+      font-size: 14px;
+      
+      line-height: 56px;
+      color:#3884e5;
+    }
+
+    .box-bottom  {
+      width:100%;
+      height: 220px;
+      padding-left :24px;
+      box-sizing: border-box;
+      border: 1px solid #e7dbe6;
+      border-top: none;
+    }
+
+    .box-bottom  li{
+      float: left;
+     width: 275px;height: 193px;
+      overflow: hidden;
+      position: relative;
+    }
+    .box-bottom  li:nth-child(n+2){
+      margin-left: 12px;
+    }
+
+    .box-bottom  li div{
+      height: 62px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, .3);
+      text-align: center;
+      font-size: 14px;
+      position: absolute;
+      bottom: 0px;  
+      overflow: hidden;
+      transform: translate(0px ,25px);
+      transition: all 1s;
+
+    }
+    .box-bottom  li div p:nth-child(1){
+      color: #fff;
+      line-height: 36px;
+    }
+    .box-bottom  li div p:nth-child(2){
+      color: #ccc;
+    }
+
+    .box-bottom img {
+      width: 275px;
+      transition: all 1s;
+
+      
+    }
+    .box-bottom li:hover img {
+      transform: scale(1.1);
+    }
+
+    .box-bottom li:hover div {
+      transform: translate(0px ,0px);
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="box-title">
+      <div class="box-title-left">目的地攻略</div>
+      <div class="box-title-right">旅游旗舰店</div>
+    </div>
+    <div class="box-top">
+      <div class="box-top-left"> 精选 </div>
+      <div class="box-top-right"> 更多旗舰店 > </div>
+    </div>
+    <div class="box-bottom">
+      <ul>
+        <li><img src="./images/1.jpg" alt="">
+          <div><p>韶关旅游体验馆</p><p>活力之旅,善美韶关</p> </div>
+        </li>
+        <li><img src="./images/2.jpg" alt="">
+          <div><p>嘉兴旅游体验馆</p><p>红船启蒙,心游嘉兴:江南水乡,历...</p> </div>
+        </li>
+        <li><img src="./images/3.jpg" alt="">
+          <div><p>广州南沙邮轮旅游体验馆</p><p>广州心诚南沙,开"驶"邮轮旅游新...</p> </div>
+        </li>
+        <li><img src="./images/4.jpg" alt="">
+          <div><p>西班牙旅游体验馆</p><p>西班牙不缺阳光,不缺美食,不缺文...</p> </div>
+        </li>
+        <li><img src="./images/5.jpg" alt="">
+          <div><p>以色列国家旅游体验馆</p><p>一面蔚蓝,一面神秘,应许之地与海...</p> </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

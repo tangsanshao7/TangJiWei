@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>轮播图</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .slider {
+      height: 340px;
+      width: 790px;
+      margin: 100px auto;
+      position: relative;
+    }
+
+    .slider ul li {
+      position: absolute;
+      display: none;
+    }
+
+    .slider ul li:first-child {
+      display: block;
+    }
+
+    .arrow {
+      display: none;
+    }
+
+    .arrow-left,
+    .arrow-right {
+      font-family: "SimSun", "宋体";
+      width: 30px;
+      height: 60px;
+      background-color: rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+      cursor: pointer;
+      text-align: center;
+      line-height: 60px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 30px;
+    }
+
+    .arrow-left:hover,
+    .arrow-right:hover {
+      background-color: rgba(0, 0, 0, .5);
+    }
+
+    .arrow-left {
+      left: 0;
+    }
+
+    .arrow-right {
+      right: 0;
+    }
+
+    .slider ol {
+      position: absolute;
+      left: 50%;
+      bottom: 20px;
+      transform: translate(-50%);
+    }
+
+    .slider ol li {
+      float: left;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-right: 10px;
+      background-color: #fff;
+    }
+
+    .slider ol li.current {
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="slider">
+    <ul>
+      <li><a href="#"><img src="img/jd1.jpg" alt=""></a></li>
+      <li><a href="#"><img src="img/jd2.jpg" alt=""></a></li>
+      <li><a href="#"><img src="img/jd3.jpg" alt=""></a></li>
+      <li><a href="#"><img src="img/jd4.jpg" alt=""></a></li>
+      <li><a href="#"><img src="img/jd5.jpg" alt=""></a></li>
+      <li><a href="#"><img src="img/jd6.jpg" alt=""></a></li>
+      <li><a href="#"><img src="img/jd7.jpg" alt=""></a></li>
+      <li><a href="#"><img src="img/jd8.jpg" alt=""></a></li>
+    </ul>
+    <!--箭头-->
+    <div class="arrow">
+      <span class="arrow-left">&lt;</span>
+      <span class="arrow-right">&gt;</span>
+    </div>
+    <!-- 小圆点 -->
+    <ol>
+      <li class="current" name="0"></li>
+      <li name="1"></li>
+      <li name="2"></li>
+      <li name="3"></li>
+      <li name="4"></li>
+      <li name="5"></li>
+      <li name="6"></li>
+      <li name="7"></li>
+      <!-- <li name="8"></li> -->
+    </ol>
+  </div>
+</body>
+<script src="../../jquery-3.4.1.min.js"></script>
+<script>
+  // 鼠标移入图片 箭头显示
+  // 自动走
+  var interval = setInterval(function () {
+    $('.arrow-right').click();
+    console.log(333);
+
+  }, 5000)
+
+  $('.slider').on('mouseenter', function () {
+    $('.arrow').show();
+    console.log(111);
+    clearInterval(interval)
+  })
+  // 鼠标离开 箭头消失
+  $('.slider').on('mouseleave', function () {
+    $('.arrow').hide();
+    interval = setInterval(function () {
+      $('.arrow-right').click();
+      console.log(222);
+
+    }, 5000)
+
+  })
+  // 声明变量  记录点击次数
+  let index = 0;
+  //  点right  图片向左走
+  $('.arrow-right').on('click', function () {
+    // 点击次 变量+1次
+    index++
+    // 如果变量 大于最后一个图片的索引 就让他返回第一个
+    if (index > $('.slider ul li').length - 1) {
+      index = 0;
+    }
+    // 图片切换
+    $('.slider ul li').stop().eq(index).fadeIn(800).siblings('li').fadeOut(800)
+    $('.slider ol li').stop().eq(index).addClass("current").siblings("li").removeClass("current")
+  })
+
+  // 点left 图片向右走
+  $('.arrow-left').on('click', function () {
+    index--;
+    // 2.1.2 给轮播图的图片做限制
+    if (index < 0) {
+      index = $('.slider ul li').length - 1;
+    }
+    console.log(index);
+    // 图片切换
+    $('.slider ul li').stop().eq(index).fadeIn(800).siblings('li').fadeOut(800)
+    $('.slider ol li').stop().eq(index).addClass("current").siblings("li").removeClass("current")
+  })
+
+
+  $('.slider ol li').on('click', function () {
+    // console.log(this);
+    index = $(this).attr("name");
+    $('.slider ul li').stop().eq(index).fadeIn(800).siblings('li').fadeOut(800)
+    $(this).addClass("current").siblings("li").removeClass("current")
+  })
+
+</script>
+
+</html>

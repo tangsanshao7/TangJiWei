@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<%- include('common/header') %>
+<body>
+  <script>NProgress.start()</script>
+
+  <div class="main">
+    <%- include('common/navbar') %>
+    <div class="container-fluid">
+      <div class="page-title">
+        <h1>我的个人资料</h1>
+      </div>
+      <!-- 有错误信息时展示 -->
+      <!-- <div class="alert alert-danger">
+        <strong>错误！</strong>发生XXX错误
+      </div> -->
+      <form class="form-horizontal" id="editUserForm">
+        <div class="form-group">
+          <label class="col-sm-3 control-label">头像</label>
+          <div class="col-sm-6">
+            <label class="form-image">
+              <input id="avatar" type="file">
+              <img src="<%- echoUser.avatar %>">
+              <i class="mask fa fa-upload"></i>
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="hidden" name="id" value="<%- echoUser.id %>">
+          <label for="email" class="col-sm-3 control-label">邮箱</label>
+          <div class="col-sm-6">
+            <input id="email" class="form-control" name="email" type="type" value="<%- echoUser.email %>" placeholder="邮箱" readonly>
+            <p class="help-block">登录邮箱不允许修改</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="slug" class="col-sm-3 control-label">别名</label>
+          <div class="col-sm-6">
+            <input id="slug" class="form-control" name="slug" type="type" value="<%- echoUser.slug %>" placeholder="slug">
+            <p class="help-block">https://zce.me/author/<strong id='slugChange'><%- echoUser.slug %></strong></p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="nickname" class="col-sm-3 control-label">昵称</label>
+          <div class="col-sm-6">
+            <input id="nickname" class="form-control" name="nickname" type="type" value="<%- echoUser.nickname %>" placeholder="昵称">
+            <p class="help-block">限制在 2-16 个字符</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="bio" class="col-sm-3 control-label">简介</label>
+          <div class="col-sm-6">
+            <textarea id="bio" class="form-control" placeholder="Bio" name="bio" cols="30" rows="6"><%- echoUser.bio %></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-3 col-sm-6">
+            <button id="updateBtn" class="btn btn-primary">更新</button>
+            <a class="btn btn-link" href="password-reset.html">修改密码</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <%- include('common/aside') %>
+
+  <%- include('common/footer') %>
+  <script src="/js/adminUserEdit.js"></script>
+</body>
+</html>

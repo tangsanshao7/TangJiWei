@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1.录入月份，输出对应的季节
+      //     (1)键盘录入一个整数(代表月份,范围1-12)
+      //     (2)输出该月份对应的季节
+      //    	   3,4,5春季
+      //    	   6,7,8夏季
+      //    	   9,10,11秋季
+      //    	   12,1,2冬季
+      //     (3)演示格式如下:
+      //    	   请输入一个月份:3
+      //    	   控制台输出:3月份是春季"
+
+      var month = +prompt("请输入一个月份");
+
+      switch (month) {
+        case 3:
+        case 4:
+        case 5:
+          alert(month + "月份是春季");
+          break;
+        case 6:
+        case 7:
+        case 8:
+          alert(month + "月份是夏季");
+          break;
+        case 9:
+        case 10:
+        case 11:
+          alert(month + "月份是秋季");
+          break;
+        case 12:
+        case 1:
+        case 2:
+          alert(month + "月份是冬季");
+          break;
+      }
+    </script>
+  </body>
+</html>

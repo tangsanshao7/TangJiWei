@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let brandList = [{
+                id: 1,
+                name: '奔驰',
+                ctime: '2020/9/23'
+            },
+            {
+                id: 2,
+                name: '宝马',
+                ctime: '2020/9/21'
+            },
+            {
+                id: 3,
+                name: '长安奔奔',
+                ctime: '2014/6/23'
+            },
+            {
+                id: 4,
+                name: '千里马',
+                ctime: '2020/5/3'
+            }
+        ]
+        localStorage.setItem("brandList", JSON.stringify(brandList));
+    </script>
+</body>
+
+</html>

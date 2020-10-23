@@ -1,0 +1,21 @@
+10.请简述js操作元素类名的方式，添加，删除，切换，是否包含这个类名的语法?
+
+      添加类名:元素.classList.add( 类名 )
+      删除类名:元素.classList.remove(类名 )
+      切换类名:元素.classList.toggle(类名 )
+      包含类名:元素.classList.contains(类名)
+    
+
+11.请简述js的节点创建有几种方式，分别是什么？
+
+      js的节点创建的方式有3种，分别是:
+      document.createElement(标签名)
+      元素.innerHTML = 字符串
+      document.write(内容)
+    
+
+12.请简述鼠标事件对象的属性e.pageX和e.clinetX的区别是什么？
+
+      e.clientX:距离浏览器可视区域X方向的距离，页面中出现滚动条会影响clientX的值
+      e.pageX：距离文档X方向的距离，页面中出现滚动条不会影响pageX的值
+    

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./lib/normalize.css">
+  <script src="./js/flexible_css.debug.js"></script>
+  <script src="./js/flexible.debug.js"></script>
+  <style>
+    header {
+      position: relative;
+      width: 100%;
+      height: calc(370rem / 75);
+      background-color: #fafafa;
+    }
+
+    header div:nth-child(1) {
+      width: 100%;
+      height: calc(184rem / 75);
+      background-image: url(./images/banner.jpg);
+      background-size: 100% 100%;
+    }
+
+    header div:nth-child(2) {
+      position: absolute;
+      width: calc(122rem / 75);
+      height: calc(122rem / 75);
+      box-sizing: border-box;
+      border-radius: 50%;
+      border: calc(4rem / 75) solid #fff;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    header div:nth-child(2) img {
+      width: 100%;
+      height: 100%;
+    }
+
+    header p {
+      text-align: center;
+      color: #303030;
+      font-size: calc(26rem / 75);
+      font-weight: 700;
+      margin-top: calc(78rem / 75);
+    }
+
+    header span {
+      display: block;
+      color: #aaa;
+      text-align: center;
+      margin-top: calc(22rem / 75);
+    }
+
+    .nav {
+      width: 100%;
+      height: calc(436rem / 75);
+    }
+
+    .nav>div {
+      float: left;
+      width: 33.3333%;
+      height: 50%;
+      box-sizing: border-box;
+      text-align: center;
+      border-top: calc(1rem / 75) solid #e4e4e4;
+    }
+
+    .nav>div:nth-child(1),
+    .nav>div:nth-child(2),
+    .nav>div:nth-child(4),
+    .nav>div:nth-child(5) {
+      border-right: calc(1rem / 75) solid #e4e4e4;
+    }
+
+    .nav>div div {
+      width: calc(192rem / 75);
+      height: calc(192rem / 75);
+      background-image: url(./images/icons.png);
+      transform: scale(0.5);
+      margin: auto;
+    }
+
+    .nav>div:nth-child(1) div {
+      background-position: calc(0rem / 75) calc(-120rem / 75);
+    }
+
+    .nav>div:nth-child(2) div {
+      background-position: calc(-400rem / 75) calc(-120rem / 75);
+    }
+
+    .nav>div:nth-child(3) div {
+      background-position: calc(-800rem / 75) calc(-120rem / 75);
+    }
+
+    .nav>div:nth-child(4) div {
+      background-position: calc(0rem / 75) calc(-400rem / 75);
+    }
+
+    .nav>div:nth-child(5) div {
+      background-position: calc(-400rem / 75) calc(-400rem / 75);
+    }
+
+    .nav>div:nth-child(6) div {
+      background-position: calc(-800rem / 75) calc(-400rem / 75);
+    }
+
+    .nav>div p {
+      transform: translateY(calc(-30rem / 75));
+      color: #303030;
+    }
+
+    h1 {
+      height: calc(80rem / 75);
+      line-height: calc(80rem / 75);
+      color: #303030;
+      padding-left: calc(20rem / 75);
+      font-weight: 700;
+      border-top: calc(1rem / 75) solid #e4e4e4;
+      border-bottom: calc(1rem / 75) solid #e4e4e4;
+    }
+
+    .btn {
+      width: 100%;
+      height: calc(100rem / 75);
+    }
+
+    .btn div:nth-child(1) {
+      float: left;
+      width: calc(104rem / 75);
+      height: 100%;
+      background-image: url(./images/icons.png);
+      background-position: calc(0rem / 75) calc(-718rem / 75);
+      transform: scale(0.7);
+      margin-left: calc(10rem / 75);
+    }
+
+    #btn2 div:nth-child(1) {
+      background-position: calc(-200rem / 75) calc(-718rem / 75);
+    }
+
+    #btn3 div:nth-child(1) {
+      background-position: calc(-400rem / 75) calc(-718rem / 75);
+    }
+
+    .btn div:nth-child(2) {
+      float: left;
+      width: calc(636rem / 75);
+      height: 100%;
+      border-bottom: calc(1rem / 75) solid #e4e4e4;
+    }
+
+    .btn div:nth-child(2) p {
+      float: left;
+      line-height: calc(100rem / 75);
+      text-align: center;
+      color: #666;
+      font-size: calc(26rem / 75);
+    }
+
+    .btn div:nth-child(2) img {
+      float: right;
+      margin-top: calc(36rem / 75);
+      margin-right: calc(32rem / 75);
+      width: calc(18rem / 75);
+    }
+
+    footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: calc(100rem / 75);
+      border-top: calc(1rem / 75) solid #e4e4e4;
+    }
+
+    footer>div {
+      float: left;
+      width: 25%;
+      height: 100%;
+      text-align: center;
+    }
+
+    footer>div div {
+      width: calc(104rem / 75);
+      height: calc(94rem / 75);
+      background-image: url(./images/icons.png);
+      transform: scale(0.4);
+      margin: auto;
+    }
+
+    footer>div:nth-child(1) div {
+      background-position: calc(0rem / 75) calc(-919rem / 75);
+    }
+
+    footer>div:nth-child(2) div {
+      background-position: calc(-200rem / 75) calc(-919rem / 75);
+    }
+
+    footer>div:nth-child(3) div {
+      background-position: calc(-400rem / 75) calc(-919rem / 75);
+    }
+
+    footer>div:nth-child(4) div {
+      background-position: calc(-600rem / 75) calc(-919rem / 75);
+    }
+
+    footer>div p {
+      color: #666;
+      transform: translateY(calc(-25rem / 75));
+    }
+
+    footer>div:last-child p {
+      color: #fa4665;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div></div>
+    <div>
+      <img src="./images/person.jpg" alt="">
+    </div>
+    <p>Hi 张大山</p>
+    <span>等级：2 积分：33 金币：5</span>
+  </header>
+  <div class="nav">
+    <div>
+      <div></div>
+      <p>评论</p>
+    </div>
+    <div>
+      <div></div>
+      <p>收藏</p>
+    </div>
+    <div>
+      <div></div>
+      <p>优惠券</p>
+    </div>
+    <div>
+      <div></div>
+      <p>爆料</p>
+    </div>
+    <div>
+      <div></div>
+      <p>投稿</p>
+    </div>
+    <div>
+      <div></div>
+      <p>消息</p>
+    </div>
+  </div>
+  <h1>常用设置</h1>
+  <div class="btn">
+    <div></div>
+    <div>
+      <p>评论设置</p>
+      <img src="./images/arrow.png" alt="">
+    </div>
+  </div>
+  <div class="btn" id="btn2">
+    <div></div>
+    <div>
+      <p>收藏设置</p>
+      <img src="./images/arrow.png" alt="">
+    </div>
+  </div>
+  <div class="btn" id="btn3">
+    <div></div>
+    <div>
+      <p>消息推送设置</p>
+      <img src="./images/arrow.png" alt="">
+    </div>
+  </div>
+  <footer>
+    <div>
+      <div></div>
+      <p>首页</p>
+    </div>
+    <div>
+      <div></div>
+      <p>商品百科</p>
+    </div>
+    <div>
+      <div></div>
+      <p>订阅</p>
+    </div>
+    <div>
+      <div></div>
+      <p>我的</p>
+    </div>
+  </footer>
+</body>
+
+</html>

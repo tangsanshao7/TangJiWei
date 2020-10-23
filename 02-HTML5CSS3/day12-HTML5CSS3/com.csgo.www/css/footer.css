@@ -1,0 +1,44 @@
+.bottom {
+  height: 160px;
+  width: 100%;
+  background-color: #000000;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.bottom-top {
+  margin-top: 40px;
+}
+.bottom-top div {
+  float: left;
+  color: #999;
+}
+
+.bottom-top img:nth-child(1) {
+  margin-left: 362px;
+}
+.bottom-top img:nth-child(2) {
+  margin-left: 27px;
+}
+
+.bottom-top-right {
+  margin-left: 12px;
+}
+.bottom-title {
+  color: #555555;
+  text-align: center;
+  margin-top: 23px;
+}
+
+.bottom-title p {
+  width: 756px;
+  margin: 0 auto;
+}
+.bottom-title a {
+  color: #53bdfa;
+}
+
+.bottom-title a img {
+  float: left;
+  margin-top: -2px;
+}

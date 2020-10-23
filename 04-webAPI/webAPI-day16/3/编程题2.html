@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <style>
+    div {
+      width: 600px;
+      margin: 100px auto;
+    }
+
+    .score {
+      display: inline-block;
+      font-size: 12px;
+      color: #999;
+      background: url(./img/right.png) no-repeat left center;
+      padding-left: 20px;
+    }
+
+    .wrong {
+      color: red;
+      background-image: url(./img/error.png);
+    }
+
+    .right {
+      color: green;
+      background-image: url(./img/right.png);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="register">
+    <input type="text" class="inp" placeholder="请输入你的成绩" />
+    <p class="score">请输入你的成绩</p>
+  </div>
+  <script>
+    // 1.获取元素
+    var inp = document.querySelector(".inp");
+    var score = document.querySelector(".score");
+    //2. 注册事件 失去焦点
+    inp.onblur = function () {
+      if (typeof this.value == Number) {
+        if (this.value >= 0 && this.value <= 100) {
+          score.className = "score right";
+          score.innerHTML = "您输入成绩正确";
+        } else if (this.value <= 0) {
+          score.className = "score wrong";
+          score.innerHTML = "输入成绩不能小于0";
+        } else if (this.value >= 100) {
+          score.className = "score wrong";
+          score.innerHTML = "输入成绩不能大于100";
+        }
+      } else if (typeof this.value != Number) {
+        score.className = "score wrong";
+        score.innerHTML = "请您输入数字";
+      }
+    };
+  </script>
+</body>
+
+</html>

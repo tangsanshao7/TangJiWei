@@ -1,0 +1,39 @@
+7.请简述在js中操作元素内容的属性有哪些，并且区别是什么？
+
+  js中操作元素内容的属性是:innerText和innerHTML
+
+  区别是:
+
+  1.innerHTML是w3c标准，innerText是非标准
+
+  2.innerHTML可以解析标签，innerText不可以
+
+  3.innerHTML会保留换行和空格，innerText不会保留换行和空格
+
+
+
+8.请简述this指向有哪些场景？
+
+ 1. 普通函数调用，this指向的是window
+
+ 2. 对象方法调用，this指向的是调用的对象
+
+ 3. 构造函数里的this指向的new构造函数之后的实例
+
+ 4. 事件处理函数里的this指向的是当前的对象
+
+ 5. 定时器里的this指向的也是window
+
+
+9.请简述offset和style的区别是什么？
+
+   1. style.left 返回的是字符串，除了数字外还带有单位：px，offsetLeft返回的是数字
+
+   2. style.left是读写的，offsetLeft是只读的，所以要改变div的位置，只能修改style.left
+
+   3. style.left只能获取行内式，如果没有返回""，所以需要事先定义，offsetLeft无需事先定义
+
+   4. offsetLeft可以返回没有定位盒子的距离左侧的位置
+
+  
+

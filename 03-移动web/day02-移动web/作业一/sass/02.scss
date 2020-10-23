@@ -1,0 +1,110 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.box {
+  width: 40px;
+  height: 40px * 5;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  .box-left {
+    position: relative;
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    // color: #fff;
+    // background-color: red;
+    &:hover {
+      background-color: #93d46f;
+    }
+    &:hover div {
+      background-color: #93d46f;
+      background-position-x: -40px;
+    }
+    &:hover .box2{
+            background-color: #f97f67;
+    }
+    &:hover .box3{
+      background-color: #72d599;
+    }
+    &:hover .box4{
+      background-color: #ff857f;
+    }
+    &:hover .box5{
+      background-color: #f97f67;
+    }
+    & .box5{
+      background-position-x: -40px;
+      background-color: #f97f67;
+    }
+    &:hover span {
+      // transition: all .3s;
+      transform: translateX(0);
+    
+    }
+    div {
+      width: 40px;
+      height: 40px;
+      z-index: 999;
+      position: relative;
+      left: 0;
+      top: 0;
+      background: url(../img/spirte.png);
+    }
+    
+    .box2 {
+      background-position-y: -480px;
+    }
+    .box3 {
+      background-position-y: -520px;
+    }
+    .box4 {
+      background-position-y: -240px;
+    }
+    .box5 {
+      background-position-y: -560px;
+    }
+    span {
+      position: absolute;
+      left: 40px;
+      width: 60px;
+      top: 0;
+      color: #fff;
+      height:40px;
+      background-color: #93d46f;
+      line-height: 40px;
+      text-align: left;
+      transform: translateX(-140px);
+      
+    }
+    
+    .span1,.span2 {
+      width: 40px;
+      background-color: #93d46f;
+    }
+    .span2{
+      background-color: #f97f67;
+
+    }
+    .span3{
+      background-color: #72d599;
+
+    }
+    .span4{
+      background-color: #ff857f;
+
+    }
+    .span5{
+      background-color: #f97f67;
+
+    }
+    .span3,.span5 {
+      width: 80px;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<%- include('./common/header') %>
+
+<link rel="stylesheet" href="/css/index.css">
+
+<body>
+  <div class="wrap">
+    <nav class="navbar  navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mymenu">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="/images/logo.png"></a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+              <div class="row">
+                <div class="col-md-6 page-title">英雄列表</div>
+                <div class="col-md-6 text-right">当前位置：首页</div>
+              </div>
+            </div>
+            <div class="panel-body">
+              <!-- action 不写 就是当前页面 method 不写 就是 get -->
+              <div class="row">
+                <div class="col-md-9">
+                  <form class="form-inline">
+                      <div class="form-group">
+                        <label class="sr-only" for="exampleInputAmount"
+                          >Amount (in dollars)</label
+                        >
+                        <div class="input-group">
+                          <div class="input-group-addon">英雄姓名</div>
+                          <input
+                            type="text"
+                            value=""
+                            class="form-control"
+                            name="search"
+                            id="search-hero"
+                            placeholder="请输入查询内容"
+                          />
+                        </div>
+                      </div>
+                      <button class="btn btn-default" id="searchBtn">查找</button>
+                    
+                    </form>
+                </div>
+                <div class="col-md-3">
+                  <a href="/heros/add" class="btn btn-success pull-right">新增</a>
+                </div>
+
+              </div>
+
+              <table id="my-table" class="table table-bordered mp15">
+                <thead>
+                  <tr>
+                    <th width="25%">姓名</th>
+                    <th width="25%">外号</th>
+                    <th width="25%">技能</th>
+                    <th width="25%">操作</th>
+                  </tr>
+                </thead>
+                <tbody id="hero-tbody">
+                  <% for(let i = 0 ; i < heros.length ; i++) {%>
+                   <tr>
+                    <td><%- heros[i].hname %></td>
+                    <td><%- heros[i].nickname %></td>
+                    <td><%- heros[i].skill %></td>
+                    <td>
+                      <button onclick="location.href='/heros/edit/<%- heros[i].id %>'" class="btn btn-primary">编辑</button>
+                      <button onclick="alert('你真狠')" class="btn btn-danger delBtn" data-id='<%- heros[i].id %>'>删除</button>
+                    </td>
+                  </tr>
+                  <% } %> 
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<%- include('./common/footer') %>
+
+<!-- 导入模板引擎js文件 -->
+<script src="/lib/js/template-web.js"></script>
+<script type="text/template" id="heros_templ">
+  <tr>
+    <td>{{ hname }}</td>
+    <td>{{ nickname }}</td>
+    <td>{{ skill }}</td>
+    <td>
+      <button onclick="location.href='/heros/edit/{{ id }}'" class="btn btn-primary">编辑</button>
+      <button onclick="alert('你真狠')" class="btn btn-danger delBtn" data-id='{{ id }}'>删除</button>
+    </td>
+  </tr>
+</script>
+
+
+<script src="/js/index.js"></script>

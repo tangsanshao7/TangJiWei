@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <div class="app">
+    <!--搜索框-->
+    <div class="nav">
+      <div class="navL fl">
+        <img src="./img/icon_search.png" alt="">
+        <input type="text" placeholder="输入您想找的商品" class="record_input">
+      </div>
+      <button class="record_btn fl">搜索</button>
+    </div>
+    <div class="hot_history">
+      <!--搜索历史-->
+      <div class="history">
+        <p class="history_tit">搜索历史</p>
+        <ul class="history_list">
+          <!--搜索历史循环列表-->
+          <!-- <li>全部搜索记录 <img src="./img/del.png" alt=""></li> -->
+        </ul>
+      </div>
+    </div>
+    <!--  清空 -->
+    <div class="close_whole">清空记录</div>
+  </div>
+</body>
+<script src="./lib/jquery-3.4.1.min.js"></script>
+<script>
+  //调用函数 显示数据
+  showData();
+
+  //为搜索框添加鼠标点击事件
+  $('.record_btn').on('click', function () {
+
+    //获取搜索框的内容
+    let content = $('.record_input').val();
+
+    //判断搜索框内容是否为空
+    if (content.trim().length == 0) {
+      alert('请输入内容');
+    } else {
+      //调用函数 添加数据
+      setData(content);
+
+      //调用函数 显示数据
+      showData();
+
+      //清空文本框
+      $('.record_input').val('');
+    }
+  })
+
+
+  //为 垃圾箱图标 设置点击事件
+  $('.history_list').on('click', 'li>img', function () {
+    //获取父元素的值
+    let getlist = $(this).parent('li').text();
+    // console.log(111);
+    console.log($(this).parent('li').text());
+    //调用删除数据方法
+    delData(getlist);
+
+    //调用显示数据方法
+    showData();
+  });
+
+
+  //为清空记录创建点击事件
+  $('.close_whole').on('click', function () {
+    //调用函数 清空历史记录
+    clearData();
+    //调用函数 重新显示
+    showData();
+  })
+
+
+  //添加数据
+  function setData(value) {
+    //获取 本地数据
+    let aData = getData();
+
+    //遍历 本地数据
+    $.each(aData, function (i, item) {
+      //判断值是否相同
+      if (item == value) {
+        aData.splice(i, 1);
+        console.log( typeof item);
+        console.log( typeof value);
+        console.log(item == value);
+      }
+      console.log( typeof item);
+      console.log( typeof value);
+      console.log(item == value);
+    })
+
+    //将值添加到 本地数据
+    aData.push(value);
+
+    //重新添加数据
+    localStorage.setItem('sHistory', JSON.stringify(aData));
+  }
+
+
+  //显示数据
+  function showData() {
+    //获取 本地数据
+    let aData = getData();
+
+    //判断数组长度是否为0
+    if (aData.length != 0) {
+
+      //创建变量
+      let historyTxt = '';
+
+      //遍历 本地数据
+      $.each(aData, function (i, item) {
+        historyTxt += `<li>${item} <img src="./img/del.png" alt=""></li>`;
+      })
+
+      //将变量添加到ul中
+      $('.history_list').html(historyTxt);
+
+      //显示历史记录
+      $('.history').show();
+      $('.close_whole').show();
+    } else {
+      //隐藏历史记录
+      $('.history').hide();
+      $('.close_whole').hide();
+    }
+  }
+
+
+  //获取数据
+  function getData() {
+    return JSON.parse(localStorage.getItem('sHistory') || '[]');
+  }
+
+
+  //删除数据
+  function delData(delval) {
+    //获取 本地数据
+    let aData = getData();
+    //遍历 本地数据
+    $.each(aData, function (i, item) {
+      if (item == delval) {
+        aData.splice(i, 1);
+      }
+      console.log( typeof item);
+      console.log( typeof delval);
+      console.log(item == delval);
+    })
+
+    //重新添加数据
+    localStorage.setItem('sHistory', JSON.stringify(aData));
+  }
+
+  //删除数据
+  // function delData(value) {
+  //   //获取 本地数据
+  //   let aData = getData();
+
+  //   //将值删除
+  //   aData.pop(value);
+
+  //   //重新添加数据
+  //   localStorage.setItem('sHistory', JSON.stringify(aData));
+  // }
+  //清空数据
+  function clearData() {
+    //清空 本地数据
+    localStorage.clear();
+  }
+</script>
+
+</html>

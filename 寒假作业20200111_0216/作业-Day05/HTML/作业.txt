@@ -1,0 +1,7 @@
+1.background的所有属性并说明其作用
+background-color 设置背景颜色
+background-image 设置背景图片地址
+background-repeat 设置背景图片是否平铺
+background-position 设置背景图片的位置
+background-size背景图片大小
+2.代码题

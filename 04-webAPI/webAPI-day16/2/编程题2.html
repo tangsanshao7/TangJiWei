@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 需求2. 实现网页的开关灯效果:
+  - 页面有一个按钮，按钮上面的文字是”开”，点击后变成”关”，同时网页的背景色是黑色，再次点击就变成”开”,同时网页的背景色是白色，如此反复循环-->
+    <button id="btn">关</button>
+  </body>
+  <script>
+    // 1
+    // var btn = document.getElementById("btn");
+    // var body = document.querySelector("body");
+    // console.log(body);
+    // btn.onclick = function() {
+    //   if (btn.innerText == "开") {
+    //     body.style.backgroundColor = "#fff";
+    //     btn.innerText = "关";
+    //   } else {
+    //     btn.innerText = "开";
+    //     body.style.backgroundColor = "#000";
+    //   }
+    // };
+
+
+    // 2
+    // var btn = document.getElementById("btn");
+    // var body = document.querySelector("body");
+    // console.log(body);
+    // btn.onclick = function() {
+    //   if (btn.innerText == "开") {
+    //     body.style.backgroundColor = "#fff";
+    //     btn.innerText = "关";
+    //   } else {
+    //     btn.innerText = "开";
+    //     body.style.backgroundColor = "#000";
+    //   }
+    // };
+
+
+    // 3
+    var btn = document.getElementById("btn");
+    var body = document.querySelector("body");
+    console.log(body);
+    btn.onclick = function() {
+      if (btn.innerText == "开") {
+        body.style.backgroundColor = "#fff";
+        btn.innerText = "关";
+      } else {
+        btn.innerText = "开";
+        body.style.backgroundColor = "#000";
+      }
+    };
+  </script>
+</html>

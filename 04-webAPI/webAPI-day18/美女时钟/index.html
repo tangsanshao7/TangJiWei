@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+
+</head>
+
+<body>
+  <img src="" alt="" id="im" />
+  <script>
+    //  1. 实现美女时钟效果(附件)：
+    // - 页面和功能都需要自己完成
+    // - 页面中会不断变换美女，并且美女手里拿的日历的小时
+    //   和秒是和系统当前的时间是一样的
+    let img = document.querySelector('img')
+    // console.log(s)
+    //1
+    // let timer = setInterval(function () {
+    // let date = new Date()
+    // let h = date.getHours()
+    // let s = date.getSeconds()
+    // h = h < 10 ? '0' + h : h
+    // s = s < 10 ? '0' + s : s
+    //   img.src = `./meimei/${h}_${s}.jpg`
+    // },1000)
+
+    //2
+    // mei()
+    // let timer = setInterval(mei, 1000)
+    // function mei() {
+    //   let date = new Date()
+    //   let h = date.getHours()
+    //   let s = date.getSeconds()
+    //   h = h < 10 ? '0' + h : h
+    //   s = s < 10 ? '0' + s : s
+    //   img.src = `./meimei/${h}_${s}.jpg`
+    // }
+
+
+    mei()
+    let timer = setInterval(mei, 1000)
+    function mei() {
+      let date = new Date()
+      let h = date.getHours()
+      let s = date.getSeconds()
+      h = h < 10 ? '0' + h : h
+      s = s < 10 ? '0' + s : s
+      img.src = `./meimei/${h}_${s}.jpg`
+    }
+  </script>
+
+</body>
+
+</html>

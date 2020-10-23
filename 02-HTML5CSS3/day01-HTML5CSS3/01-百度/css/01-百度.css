@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  margin-left:700px;
+  margin-top: 100px;
+}
+
+a{
+  font-weight: 700;
+}
+
+.main{
+  margin-top: 56px;
+}
+
+.main span{
+  display: inline-block;
+  width: 2px; 
+  height: 18px;
+  background-color: #0087c7;
+}
+
+.footer{
+  margin-top: 64px;
+}
+
+.sm{
+  margin-top: 60px;
+}
+
+.sm p{
+margin-top: 16px;
+}
+
+.sm span{
+  display: inline-block;
+  width: 2px; 
+  height: 18px;
+  background-color: #0087c7;
+}
+
+.sm p:last-child{
+  font-weight: 500;
+} 

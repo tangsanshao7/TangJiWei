@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="./imgs/1.gif" alt="" id="imgs" />
+
+    <script>
+      // 5. 提示用户输入年龄，若用户的年龄大于等于18岁，则给用户在网页中显示一张图片，否则以弹出框的方式提示用户年龄太小。
+      var imgs = document.getElementById("imgs");
+      imgs.style.display = "none";
+      var age = +prompt("请输入年龄");
+      if (age >= 18) {
+        imgs.style.display = "block";
+      } else {
+        alert("您的年龄太小了");
+      }
+    </script>
+  </body>
+</html>

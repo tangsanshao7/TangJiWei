@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=W, initial-scale=1.0">
+  <title>js五星好评</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .box {
+      width: 400px;
+      height: 140px;
+      padding: 60px 0;
+      padding-left: 20px;
+      margin: 100px auto;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    .box ul {
+      float: left;
+      width: 120px;
+      overflow: hidden;
+    }
+
+    .box li {
+      float: left;
+      width: 20px;
+      height: 20px;
+      background: url(./star2.png) no-repeat;
+      background-size: 100%;
+      margin-left: 2px;
+    }
+
+    .box>span {
+      float: left;
+    }
+
+    .box .star {
+      background: url(./star1.png) no-repeat;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <span></span>
+  </div>
+  <script>
+    let lis = document.querySelectorAll('li');
+    let span = document.querySelector('span')
+    let arr = ['极差', '失望', '一般', '满意', '惊喜'];
+    let flag = 0;
+    let msgFlag = null;
+    for (let i = 0; i < lis.length; i++) {
+      // 1、移入
+      lis[i].addEventListener('mouseover', function () {
+        let num = i + 1;
+        for (let i = 0; i < lis.length; i++) {
+          lis[i].className = i < num ? 'star' : '';
+        }
+        span.innerHTML = arr[i];
+      })
+      // 2、移出 
+      lis[i].addEventListener('mouseout', function () {
+        span.innerHTML = msgFlag;
+        for (let i = 0; i < lis.length; i++) {
+          lis[i].className = i < flag ? 'star' : '';
+        }
+      })
+      // 3、点击 
+      lis[i].addEventListener('click', function () {
+        flag = i + 1;
+        span.innerHTML = msgFlag = arr[i];
+        for (let i = 0; i < lis.length; i++) {
+          lis[i].className = i < flag ? 'star' : '';
+        }
+      })
+    }
+  </script>
+</body>
+
+</html>

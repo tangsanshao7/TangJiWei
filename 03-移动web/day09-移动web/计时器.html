@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    
+    .clock {
+      width: 600px;
+      height: 600px;
+      margin: 100px auto;
+      background: url(clock.jpg) no-repeat;
+      position: relative;
+    }
+
+    .clock div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(hour.png) no-repeat center center;
+    }
+
+    #m {
+      background-image: url(minute.png);
+    }
+
+    #s {
+      background-image: url(second.png);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="clock">
+    <div id="h"></div>
+    <div id="m"></div>
+    <div id="s"></div>
+  </div>
+  <script>
+ 
+
+    var hDiv = document.getElementById('h');
+    var mDiv = document.getElementById('m');
+    var sDiv = document.getElementById('s');
+
+
+    //由于定时器要1s之后才会执行，导致页面刚加载的时候会有卡顿
+    
+    kaishi()//开始走字
+
+
+    //1.开启定时器：1s
+    setInterval(function () {
+      kaishi();
+    }, 10);
+
+    function kaishi() {
+      //1.获取当前的时分秒
+      var date = new Date();
+      var h = date.getHours();//时
+      var m = date.getMinutes();//分
+      var s = date.getSeconds();//秒
+      var ms = date.getMilliseconds();//
+      //2.计算时分秒的角度
+      var sDeg = (s + ms / 1000) * 6;
+      var mDeg = (m + s / 60) * 6;
+      var hDeg = (h + m / 60 + s / 3600) * 30;
+      //3.修改元素的transform角度值
+      sDiv.style.transform = ' rotate(' + sDeg + 'deg)'
+      mDiv.style.transform = ' rotate(' + mDeg + 'deg)'
+      hDiv.style.transform = ' rotate(' + hDeg + 'deg)'
+    }
+
+  </script>
+</body>
+
+</html>

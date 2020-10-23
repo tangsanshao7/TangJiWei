@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 06. 写一个函数，判断是否是闰年【能被4整除且不能被100整除，或者能被400整除】
+      // 步骤
+      // 1. 声明一个函数
+      function year() {
+        // 2.   让用户输入年份
+        var num = +prompt("请输入一个年份");
+        // 3.判断
+        if ((num % 4 == 0 && num % 100 != 0) || num % 400 == 0) {
+          // 4. 返回结果
+          return num + "年是闰年";
+        } else {
+          return num + "年不是闰年";
+        }
+      }
+
+      alert(year());
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    // 需求: 定义一个长度为10的数组，在每一个元素存放一个单词，然后用户输入单词进行匹配，
+    // 通过程序判断数组是否包含有这个单词，包含这个单词打印"YES", 否则就是"NO"
+
+ 
+    // 步骤: 
+    // 1.声明一个数组
+    var aWords = ["red","pink","blue","skyblue","hotpink","yellow","green","purple","white","black"];
+    // 2.声明一个变量用来接收用户输入的单词
+    var sInput = prompt("请输入您想要输入的单词");
+    // 3.使用indexOf来判断 用户输入的单词在不在数组中
+    if (aWords.indexOf(sInput) === -1) {
+    // 4.如果不在 打印 NO
+    alert("NO");
+    } else {
+    // 5.否则 打印 YES
+    alert("YES");
+    }
+   
+
+      
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+1.关于盒子宽度下列正确的是（D）
+
+(A) 盒子宽：就是width的大小
+
+(B) 盒子宽： padding-left + width + padding-right 
+
+(C) 盒子宽： border-left + width + border-right 
+
+(D) 盒子宽： border-left+ padding-left + width + padding-right + border-right
+
+
+2.关于盒子高度下列正确的是（D）
+
+(A) 盒子高：就是height的大小
+
+(B) 盒子高：padding-top +height + padding-bottom 
+
+(C) 盒子高：border-top + height + border-bottom
+
+(D) 盒子高：border-top + padding-top +height + padding-bottom + border-bottom
+
+3关于根据下列代码计算 盒子宽高下列说法正确的是（B）
+
+		div {
+
+​			width: 200px;
+
+​			height: 200px;
+
+​			border: 1px solid #000000;
+
+​			border-top: 5px solid blue;
+
+​			padding: 50px;
+
+​			padding-left: 100px;
+
+​		}
+
+(A) 宽度为200px 高度为200px
+
+(B) 宽度为352px 高度为306px
+
+(C) 宽度为302px 高度为307px
+
+(D) 宽度为302px 高度为252px
+
+
+4.外边距合并及解决方案
+外边距合并：假设有上下两个盒子，两个盒子的间距等于最大的那个外边距
+解决：只给一个盒子盒子设置外边距
+
+
+
+5.用公式写两个列子
+  /*外盒尺寸计算（元素空间尺寸）*/
+  Element空间高度 = content height + padding + border + margin
+  Element 空间宽度 = content width + padding + border + margin
+  /*内盒尺寸计算（元素实际大小）*/
+  Element Height = content height + padding + border （Height为内容高度）
+  Element Width = content width + padding + border （Width为内容宽度）
+
+6.什么是浮动？以及清除浮动的方法（4种）
+让盒子脱离标准流叫做浮动,
+清除浮动的方式:
+1.隔墙法
+// 在最后一个浮动元素末尾 添加一个空的标签
+// 例如：<div style="clear: both">
+2.overflow法
+// 超出时隐藏：
+// overflow: hidden;（溢出: 隐藏）;
+// 出现滚动条：
+// 超出时自动出现滚动条：
+// overflow: auto;
+// 无论超不超出，强制出现滚动条		 
+// overflow: scroll;
+3.单伪元素法
+/*
+ 给父元素添加after伪元素：
+   元素:after{
+   content: "";
+   display: block;
+   height: 0;
+   clear: both;
+   }
+*/
+4.双伪元素法
+/*
+   给父元素添加before和after两个伪元素：
+   .clearfix:before,
+   .clearfix:after {	  
+    content: "";
+    display: table;	  
+    }
+   .clearfix:after {
+     clear: both;
+    } 
+   .clearfix {
+    *zoom: 1;
+   }
+*/
+
+
+
+
+7.定位都有哪些，以及各自的特点
+1. '静态定位static'：代表无定位，无参照物
+2. '相对定位relative'：定位的参照物是自身
+3. '绝对定位absolute'：定位的参照物是最近的那个有定位的祖先元素
+4. '固定定位fixed'：定位的参照物是浏览器的可视窗口
+
+8元素的显示与隐藏（display 、visibility、overflow）的特点？
+display:隐藏后不占有位置
+visibility:隐藏后盒子仍然占有原来的位置
+overflow:隐藏后不占有原来的位置
+
+9.单行出现省略号与多行出现省略号的方法？
+
+   单行
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+
+      多行
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      /* 几行后显示不开省略 */
+      -webkit-line-clamp: 2;

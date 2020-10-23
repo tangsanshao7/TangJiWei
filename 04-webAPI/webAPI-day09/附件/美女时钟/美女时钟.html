@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+</head>
+
+<body>
+  <img src="" alt="" id="im" />
+  <script>
+
+
+    var img = document.getElementById('im');
+    var m = 0;
+    var s = 0;
+    //获取当前年月日星期几几点几分几秒并打印
+    function getTimer() {
+      function getTimerr() {
+
+
+      }
+      return time + ' ' + getTimerr()
+    }
+    setInterval(function () {
+      s++;
+      if (s > 59) {
+        s = 0;
+        m++;
+      }
+      var time = new Date()
+      var m = time.getHours()
+      var s = time.getSeconds()
+      s = s < 10 ? '0' + s : s;
+      m -= 0;
+      m = m < 10 ? '0' + m : m;
+      img.src = 'meimei/' + m + '_' + s + '.jpg';
+    }, 1000)
+
+
+  </script>
+</body>
+
+</html>

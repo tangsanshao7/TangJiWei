@@ -1,0 +1,80 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+.box {
+  width: 34px;
+  height: 272px;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.box .box-rigth {
+  width: 100%;
+  position: relative;
+}
+.box .box-rigth:hover div {
+  background-position-x: -40px;
+}
+.box .box-rigth:hover span {
+  transition: all 0.3s;
+  transform: translateX(-135px);
+}
+.box .box-rigth span {
+  position: absolute;
+  height: 34px;
+  width: 100px;
+  background-color: #474747;
+  left: 35px;
+  top: 0;
+  text-align: center;
+  line-height: 34px;
+  color: #fff;
+}
+.box .box-rigth div {
+  width: 34px;
+  height: 34px;
+  background-color: red;
+  z-index: 999;
+  position: relative;
+}
+.box .box-rigth .box1 {
+  background: url(../img/1.png) left top;
+}
+.box .box-rigth .box1::after {
+  display: block;
+  content: "0";
+  width: 20px;
+  height: 16px;
+  text-align: center;
+  line-height: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #ff3228;
+}
+.box .box-rigth .box2 {
+  background: url(../img/1.png) left -35px;
+}
+.box .box-rigth .box3 {
+  background: url(../img/1.png) left -70px;
+}
+.box .box-rigth .box4 {
+  background: url(../img/1.png) left -105px;
+}
+.box .box-rigth .box5 {
+  background: url(../img/1.png) left -140px;
+}
+.box .box-rigth .box6 {
+  background: url(../img/1.png) left -175px;
+}
+.box .box-rigth .box7 {
+  background: url(../img/1.png) left -210px;
+}
+.box .box-rigth .box8 {
+  background: url(../img/1.png) left -245px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 22.写一个函数， 传入3 个正数，判断能否构成一个三角形
+      // 声明一个函数
+      function sj(){
+        // 让用户输入三条边
+        var a = +prompt("请输入第一条边");
+        var b = +prompt("请输入第二条边");
+        var c = +prompt("请输入第三条边");
+        // 判断是否任意两边之和都大于第三边  
+        if (a + b > c && a + c > b && b + c > a) {
+          // 如果是他就能构成一个三角形
+          alert("能构成一个三角形");
+        } else {
+          // 否则不能
+          alert("不能构成一个三角形");
+        }
+      }
+
+      sj();
+    </script>
+  </body>
+</html>

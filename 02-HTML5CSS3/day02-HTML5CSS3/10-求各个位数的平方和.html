@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 10.定义一个三位数，求各位数的平方和是多少，在控制台输出。
+      var num = +prompt("请输入一个三位数");
+      var gw = num % 10;
+      var sw = parseInt((num / 10) % 10);
+      var bw = parseInt(num / 100);
+      var sum=gw*gw+sw*sw+bw*bw;
+      alert(`${num}的各个位数的平方和是${sum}`)
+
+    </script>
+  </body>
+</html>

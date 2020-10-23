@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 7. 根据输入的数字，判断如果是1-5打印工作日，如果是6，7打印休息日。
+      var days = +prompt("请输入今天的星期数");
+
+      switch (days) {
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+          console.log('工作日');
+          break;
+          case 6:
+            case 7:
+              console.log('休息日');
+              break;
+      }
+    </script>
+  </body>
+</html>

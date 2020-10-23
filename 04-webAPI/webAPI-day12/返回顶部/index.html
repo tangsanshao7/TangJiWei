@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      width: 100%;
+      height: 5000px;
+    }
+
+    .box {
+      position: fixed;
+      top: 300px;
+      right: 0px;
+    }
+
+    li {
+      height: 50px;
+      width: 50px;
+      background-image: url(./images/sbtn.png);
+      list-style: none;
+      margin-bottom: 4px;
+    }
+
+    .t {
+      background-position-y: -50px;
+    }
+
+    .th {
+      background-position-y: -100px;
+    }
+
+    .f {
+      background-position-y: 50px;
+    }
+
+    .wei {
+      position: fixed;
+      top: 288px;
+      right: 53px;
+      height: 200px;
+      width: 200px;
+      display: none;
+    }
+
+    .app {
+      position: fixed;
+      top: 317px;
+      right: 53px;
+      height: 200px;
+      width: 200px;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wei">
+    <img src="./images/lrtk_weixin.png" alt="">
+  </div>
+  <div class="app">
+    <img src="./images/lrtk_app.png" alt="">
+  </div>
+  <div class="box">
+    <ul>
+      <li class="o"></li>
+      <li class="t"></li>
+      <li class="th"></li>
+      <li class="f"> </li>
+    </ul>
+  </div>
+  <script>
+    let wei = document.querySelector('.wei')
+    let app = document.querySelector('.app')
+    let o = document.querySelector('.o')
+    let t = document.querySelector('.t')
+    let th = document.querySelector('.th')
+    let f = document.querySelector('.f')
+    o.addEventListener('mouseover', function () {
+      wei.style.display = 'block'
+      this.style.backgroundPositionX = '-50px'
+    })
+    o.addEventListener('mouseout', function () {
+      wei.style.display = 'none'
+      this.style.backgroundPositionX = '0px'
+    })
+    t.addEventListener('mouseover', function () {
+      app.style.display = 'block'
+      this.style.backgroundPositionX = '-50px'
+    })
+    t.addEventListener('mouseout', function () {
+      app.style.display = 'none'
+      this.style.backgroundPositionX = '0px'
+    })
+    th.addEventListener('mouseover', function () {
+      this.style.backgroundPositionX = '-50px'
+    })
+    th.addEventListener('mouseout', function () {
+      this.style.backgroundPositionX = '0px'
+    })
+    th.addEventListener('click', function () {
+      document.documentElement.scrollTop = 0;
+    })
+
+    f.addEventListener('mouseover', function () {
+      this.style.backgroundPositionX = '-50px'
+    })
+    f.addEventListener('mouseout', function () {
+      this.style.backgroundPositionX = '0px'
+    })
+  </script>
+</body>
+
+</html>

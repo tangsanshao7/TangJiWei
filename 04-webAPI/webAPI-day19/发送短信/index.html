@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  手机号码:<input type="number" placeholder="请输入手机号"> <button>发送</button>
+
+  <script>
+    // 当我们点击了按钮之后， button会禁用
+    // 同时按钮里面的文字发生变化 innerHTML来修改内容
+    // 里面的秒数是要发生变化的 要用定时器 setInterval
+    // 如果值小于等于0 说明时间到了 要停止定时器  发送按钮要恢复原状
+
+    
+
+    let btn = document.querySelector('button')
+    var timer=null;
+    let num = 10;
+    btn.addEventListener('click', function () {
+      this.disabled = true
+      timer = setInterval( function () {
+        num--
+        btn.innerHTML = `倒计时还剩${num}秒`
+        if (num == 0) {
+          clearInterval(timer)
+          timer = null
+          btn.disabled = false
+          btn.innerHTML = '重新发送'
+          num = 10
+        }
+      }, 1000)
+    })
+
+
+
+    // let btn = document.querySelector('button')
+    // var timer=null;
+    // let num = 10;
+    // btn.addEventListener('click', function () {
+    //   this.disabled = true
+    //   timer = setInterval( function () {
+    //     num--
+    //     btn.innerHTML = `倒计时还剩${num}秒`
+    //     if (num == 0) {
+    //       clearInterval(timer)
+    //       timer = null
+    //       btn.disabled = false
+    //       btn.innerHTML = '重新发送'
+    //       num = 10
+    //     }
+    //   }, 1000)
+    // })
+
+
+
+    // let btn = document.querySelector('button')
+    // var timer=null;
+    // let num = 10;
+    // btn.addEventListener('click', function () {
+    //   this.disabled = true
+    //   timer = setInterval( function () {
+    //     num--
+    //     btn.innerHTML = `倒计时还剩${num}秒`
+    //     if (num == 0) {
+    //       clearInterval(timer)
+    //       timer = null
+    //       btn.disabled = false
+    //       btn.innerHTML = '重新发送'
+    //       num = 10
+    //     }
+    //   }, 1000)
+    // })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/13.css">
+
+</head>
+
+<body>
+  <div class="top">
+    <img src="img/top1.png" alt="" />
+  </div>
+  <div class="louceng">
+    <!-- 楼层1 -->
+    <div class="jd jia">
+      <img src="img/jia.png" alt="" />
+    </div>
+    <!-- 楼层2 -->
+    <div class="jd dian">
+      <img src="img/dian.png" alt="" />
+    </div>
+    <!-- 楼层3 -->
+    <div class="jd fu">
+      <img src="img/fu.png" alt="" />
+    </div>
+    <!-- 楼层4 -->
+    <div class="jd mei">
+      <img src="img/mei.png" alt="" />
+    </div>
+  </div>
+  <div class="bottom">
+    <img src="img/bottom.png" alt="" />
+  </div>
+  <!-- 侧边栏 -->
+  <div class="subnav">
+    <ul>
+      <li>家电通讯</li>
+      <li>电脑数码</li>
+      <li>服饰精品</li>
+      <li>美容珠宝</li>
+    </ul>
+    <div class="back">返回</div>
+
+  </div>
+  <script>
+    //获取元素
+    let jia = document.querySelector('.jia')
+    let dian = document.querySelector('.dian')
+    let fu = document.querySelector('.fu')
+    let mei = document.querySelector('.mei')
+    let back = document.querySelector('.back')
+    let louceng=document.querySelector('.louceng')
+    //获取jia距离顶部的高度
+    let jiaTop = jia.offsetTop
+    console.log(jiaTop)
+    window.onscroll = function () {
+      //获取页面被卷曲的高度
+      let jiaScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      console.log(jiaScroll);
+      
+    }
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

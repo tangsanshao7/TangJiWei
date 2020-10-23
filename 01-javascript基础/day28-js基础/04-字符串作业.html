@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 4. var str= 'qweqweoeqweroqweqweodfsfdo'
+      //   1)查找字符串中所有字母 'o'出现的位置
+      //   2)把字符串中的所有字母'o'替换成 '-';
+
+      var str = "qweqweoeqweroqweqweodfsfdo";
+      // 声明一个空字符串
+      var newStr = "";
+      // 循环遍历字符串
+      for (var i = 0; i < str.length; i++) {
+        // 判断如果字符串中有元素等于o
+        if (str[i] == "o") {
+          // 就打印下标  并将他更改为-
+            console.log(i);
+          newStr += "-";
+        } else {
+          // 否则就正常添加进新字符串中
+          newStr += str[i];
+        }
+      }
+      console.log(newStr);
+    </script>
+  </body>
+</html>

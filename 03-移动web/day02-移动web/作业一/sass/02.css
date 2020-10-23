@@ -1,0 +1,123 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  width: 40px;
+  height: 200px;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.box .box-left {
+  position: relative;
+  text-decoration: none;
+  height: 40px;
+  width: 40px;
+}
+
+.box .box-left:hover {
+  background-color: #93d46f;
+}
+
+.box .box-left:hover div {
+  background-color: #93d46f;
+  background-position-x: -40px;
+}
+
+.box .box-left:hover .box2 {
+  background-color: #f97f67;
+}
+
+.box .box-left:hover .box3 {
+  background-color: #72d599;
+}
+
+.box .box-left:hover .box4 {
+  background-color: #ff857f;
+}
+
+.box .box-left:hover .box5 {
+  background-color: #f97f67;
+}
+
+.box .box-left .box5 {
+  background-position-x: -40px;
+  background-color: #f97f67;
+}
+
+.box .box-left:hover span {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.box .box-left div {
+  width: 40px;
+  height: 40px;
+  z-index: 999;
+  position: relative;
+  left: 0;
+  top: 0;
+  background: url(../img/spirte.png);
+}
+
+.box .box-left .box2 {
+  background-position-y: -480px;
+}
+
+.box .box-left .box3 {
+  background-position-y: -520px;
+}
+
+.box .box-left .box4 {
+  background-position-y: -240px;
+}
+
+.box .box-left .box5 {
+  background-position-y: -560px;
+}
+
+.box .box-left span {
+  position: absolute;
+  left: 40px;
+  width: 60px;
+  top: 0;
+  color: #fff;
+  height: 40px;
+  background-color: #93d46f;
+  line-height: 40px;
+  text-align: left;
+  -webkit-transform: translateX(-140px);
+          transform: translateX(-140px);
+}
+
+.box .box-left .span1, .box .box-left .span2 {
+  width: 40px;
+  background-color: #93d46f;
+}
+
+.box .box-left .span2 {
+  background-color: #f97f67;
+}
+
+.box .box-left .span3 {
+  background-color: #72d599;
+}
+
+.box .box-left .span4 {
+  background-color: #ff857f;
+}
+
+.box .box-left .span5 {
+  background-color: #f97f67;
+}
+
+.box .box-left .span3, .box .box-left .span5 {
+  width: 80px;
+}
+/*# sourceMappingURL=02.css.map */

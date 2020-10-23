@@ -1,0 +1,823 @@
+/* 1、顶部导航 */
+.topnav-x {
+  width: 100%;
+  height: 44px;
+  background-color: #0054a7;
+}
+
+/* 1.1 顶部导航左边 */
+.topnav-x .topnav-left {
+  float: left;
+}
+
+.topnav-x .topnav-left span {
+  color: #fff;
+  font-size: 12px;
+  line-height: 44px;
+  margin-right: 20px;
+}
+
+.topnav-x .topnav-left a {
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.topnav-x .topnav-left a:first-child {
+  display: block;
+  width: 66px;
+  height: 100%;
+  background-color: #00366d;
+}
+
+/* 顶部导航右边 */
+.topnav-x .topnav-right {
+  float: right;
+}
+
+.topnav-x .topnav-right a {
+  float: left;
+  color: #fff;
+  font-size: 12px;
+  line-height: 44px;
+  text-decoration: none;
+  margin-right: 22px;
+}
+.topnav-right i {
+  font-size: 25px;
+  line-height: 44px;
+}
+/* 2、搜索框 */
+
+.search-x {
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+.search-x .search-area {
+  position: relative;
+  float: left;
+  width: 484px;
+  height: 38px;
+}
+
+.search-x .search-area-input {
+  float: left;
+  width: 392px;
+  height: 38px;
+  border: 3px solid #0054a7;
+  box-sizing: border-box;
+}
+.search-x .search-area-input span {
+  display: inline-block;
+  width: 80px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  background-color: #f6f6f6;
+}
+.search-x .search-area input {
+  border: none;
+}
+.search-x .container img {
+  float: left;
+  margin-right: 160px;
+}
+.search-x .search-area button {
+  float: right;
+  width: 92px;
+  height: 38px;
+  border: none;
+  color: #fff;
+  background-color: #0054a7;
+}
+.search-x .search-text {
+  margin-top: 22px;
+}
+.search-x .search-miaoshu li {
+  float: left;
+  margin-right: 12px;
+  margin-top: 10px;
+}
+
+.search-x .search-text {
+  position: absolute;
+  right: -32px;
+  top: -22px;
+}
+
+.search-x .search-text span {
+  width: 40px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+}
+.search-x .search-lesson {
+  float: left;
+  margin-left: 150px;
+  position: relative;
+}
+
+.search-x .search-lesson p {
+  font-size: 12px;
+}
+
+.search-x .search-lesson span {
+  color: #ff8c14;
+  font-weight: 700;
+}
+.search-x .search-lesson p:nth-child(2) {
+  font-weight: 700;
+}
+
+.search-x .search-lesson img {
+  position: absolute;
+  left: 84px;
+  top: 20px;
+}
+
+.search-x .cart {
+  position: absolute;
+  right: -165px;
+  top: 0;
+}
+
+/* 导航栏开始 */
+
+.nav {
+  height: 54px;
+  margin-top: 88px;
+  border-bottom: 4px solid #0054a7;
+}
+
+.nav-sort {
+  float: left;
+  width: 146px;
+  height: 45px;
+  background-color: #0054a7;
+  margin-top: 9px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+.nav ul {
+  float: left;
+  height: 54px;
+}
+
+.nav li {
+  height: 54px;
+  float: left;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.nav li p {
+  margin-top: 10px;
+}
+
+.nav s {
+  float: left;
+  height: 50px;
+  width: 1px;
+  display: block;
+  background-color: #e9e9e9;
+}
+
+.nav-title {
+  float: left;
+  height: 54px;
+  width: 165px;
+  font-size: 26px;
+  color: #00acde;
+  margin-left: 50px;
+}
+
+.nav-title span {
+  float: left;
+  font-size: 14px;
+  color: #999;
+}
+/* 导航栏结束 */
+/* 轮播图开始 */
+.carousel {
+  height: 474px;
+}
+
+.carousel-left {
+  height: 100%;
+  float: left;
+}
+.carousel-left ul {
+  height: 474px;
+  width: 146px;
+  padding-top: 16px;
+  border: 1px solid #ccc;
+  box-shadow: 4px 0px 20px #ccc;
+  border-top: none;
+  font-size: 14px;
+  box-sizing: border-box;
+  background: url(../img/tab-t.png) no-repeat 10px center;
+}
+.carousel-left li:nth-child(n + 2) {
+  margin-top: 15px;
+}
+.carousel-left a {
+  text-align: center;
+  color: #333;
+}
+
+.carousel-left li {
+  height: 18px;
+
+  margin-left: 38px;
+}
+.carousel-conter {
+  float: left;
+  margin-left: 18px;
+}
+
+.carousel-conter-bottom {
+  margin-top: 20px;
+  width: 724px;
+  height: 164px;
+  background-color: #ffffff;
+  border: solid 1px #eeeeee;
+}
+.carousel-conter-bottom > img {
+  float: left;
+  margin-top: 64px;
+  margin-left: 5px;
+}
+
+.carousel-conter-bottom div img {
+  /* height: 100%; */
+  margin-top: 10px;
+}
+.carousel-conter-bottom div {
+  float: left;
+  width: 224px;
+  height: 164px;
+}
+.carousel-conter-bottom div:nth-child(3) {
+  border-left: solid 1px #eeeeee;
+  border-right: solid 1px #eeeeee;
+}
+
+.carousel-right {
+  height: 474px;
+
+  width: 292px;
+  float: left;
+  margin-left: 18px;
+}
+
+.carousel-right-nav {
+  width: 292px;
+  height: 143px;
+  background-color: #ffffff;
+  border: solid 1px #ededed;
+  margin-top: 20px;
+}
+
+.carousel-right-nav-top {
+  height: 33px;
+}
+
+.carousel-right-nav-top span {
+  float: left;
+  line-height: 31px;
+  width: 42px;
+  height: 31px;
+  text-align: center;
+}
+.carousel-right-nav-top span:nth-child(2) {
+  width: 248px;
+  background-color: #fbfbfb;
+  border: solid 1px #ededed;
+  text-align: left;
+  padding-left: 12px;
+  box-sizing: border-box;
+}
+
+.carousel-right-nav-bottom {
+  margin-top: 16px;
+  margin-left: 16px;
+
+  width: 263px;
+  height: 73px;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: #333333;
+}
+.login-top img {
+  float: left;
+  margin-right: 16px;
+}
+.login-title {
+  float: left;
+}
+
+.login-top {
+  height: 86px;
+  margin-top: 18px;
+}
+
+.login-title {
+  /* margin-top: 20px; */
+  line-height: 20px;
+}
+.login-title p:nth-child(1) {
+  color: #0054a7;
+}
+
+.login-title p span {
+  color: #ff8a00;
+}
+
+.login-button button {
+  width: 83px;
+  height: 37px;
+  background-color: #ff8a00;
+  border: none;
+  font-size: 14px;
+  margin-right: 8px;
+  color: #ffffff;
+}
+
+.gallery {
+  margin-top: 10px;
+  height: 156px;
+}
+
+.gallery-top {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000000;
+}
+
+.gallery-bottom {
+  margin-top: 6px;
+  height: 132px;
+}
+
+.gallery-bottom li {
+  width: 64px;
+  height: 64px;
+  background-color: #f1f1f1;
+  float: left;
+  margin-right: 12px;
+}
+.gallery-bottom li:nth-child(n + 5) {
+  margin-top: 4px;
+}
+
+.gallery-bottom li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.gallery-bottom li a {
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.gallery-bottom li img {
+  margin-left: 21px;
+  margin-top: 13px;
+}
+
+/* 轮播图结束 */
+
+/* 活动开始  */
+
+.active {
+  padding: 40px 0;
+}
+.active-news {
+  float: left;
+}
+.active-news dl {
+  float: left;
+  margin-right: 105px;
+}
+.active-news dt {
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.active-news dd {
+  font-size: 12px;
+  color: #333333;
+  line-height: 20px;
+}
+/* 活动结束  */
+.exam {
+  height: 521px;
+  width: 100%;
+  /* background-color: gray; */
+}
+.exam-title {
+  height: 86px;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ededed;
+  box-sizing: border-box;
+}
+.exam-title-left {
+  float: left;
+  width: 473px;
+  height: 100%;
+  background-color: #ffffff;
+}
+.exam-title-left img {
+  width: 100%;
+  margin-top: 33px;
+  margin-bottom: 9px;
+}
+.exam-title-left span,
+.exam-title-left s {
+  float: left;
+}
+
+.exam-title-left s,
+.exam-title-right s {
+  margin: 0 14px;
+}
+.exam-title-left-span {
+  margin-left: 321px;
+}
+
+.exam-title-center {
+  float: left;
+}
+.exam-title-center img {
+  height: 100%;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.exam-title-right {
+  float: right;
+  width: 473px;
+  height: 100%;
+  background-color: #ffffff;
+}
+.exam-title-right img {
+  width: 100%;
+  margin-top: 33px;
+  margin-bottom: 9px;
+}
+
+/* 1.2考研内容 */
+.exam-content {
+  height: 434px;
+  width: 100%;
+  /* background-color: saddlebrown; */
+  border-bottom: 1px solid #f2f2f2;
+}
+/* 1.2.1考研内容第一部分 */
+.exam-content-one {
+  float: left;
+  height: 100%;
+  width: 398px;
+  /* background-color: seagreen; */
+  border-right: 1px solid #f2f2f2;
+}
+.exam-content-one-title {
+  height: 52px;
+  width: 100%;
+  /* background-color: hotpink; */
+}
+.exam-content-one-title span {
+  line-height: 52px;
+  font-weight: 700;
+}
+.exam-content-one-center {
+  /* float: left; */
+  position: relative;
+  width: 378px;
+  height: 224px;
+  /* background-color: indigo; */
+  border-bottom: 1px solid #f2f2f2;
+}
+.exam-content-one-center h2,
+.exam-content-two-center h2 {
+  margin-top: 11px;
+  font-weight: normal;
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+.exam-content-one-center h2 > s,
+.exam-content-two-center h2 > s {
+  font-weight: 700;
+}
+.exam-content-one-center :nth-child(3) {
+  font-size: 18px;
+  color: #e95052;
+}
+.exam-content-one-center :nth-child(4),
+.exam-content-two-center :nth-child(4) {
+  color: #cdcdcd;
+}
+.exam-content-one-center :nth-child(5),
+.exam-content-two-center :nth-child(5) {
+  margin-left: 22px;
+  color: #cdcdcd;
+}
+.exam-content-one-center :nth-child(5) s,
+.exam-content-two-center :nth-child(5) s {
+  color: #4d4d4d;
+}
+.mianfei {
+  position: absolute;
+  bottom: 16px;
+  right: 0px;
+}
+
+.exam-content-one-bottom {
+  height: 155px;
+  width: 378px;
+  /* background-color: aquamarine; */
+}
+.exam-content-one-bottom li,
+.exam-content-four-bottom li {
+  list-style: disc;
+  height: 26px;
+  margin-left: 14px;
+  color: #acacac;
+}
+.exam-content-one-bottom li span {
+  color: #646464;
+}
+.exam-content-one-bottom ul {
+  border: 1px solid transparent;
+}
+.exam-content-one-bottom ul li:first-child,
+.exam-content-four-bottom ul li:first-child {
+  margin-top: 14px;
+}
+
+.exam-content-one-bottom li s {
+  float: right;
+}
+
+/*  1.2.2考研内容第二部分 */
+.exam-content-two {
+  float: left;
+  height: 100%;
+  width: 318px;
+  /* background-color: tan; */
+  padding-left: 20px;
+  box-sizing: border-box;
+  border-right: 1px solid #f2f2f2;
+}
+.exam-content-two-center :nth-child(3) {
+  font-size: 18px;
+  font-weight: 600;
+  color: #a3a3a3;
+}
+.exam-content-two-center {
+  position: relative;
+  height: 225px;
+  width: 278px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.cishu {
+  position: absolute;
+  bottom: 16px;
+  right: 22px;
+}
+.exam-content-two .exam-content-one-bottom ul {
+  width: 276px;
+}
+.exam-content-two .exam-content-one-bottom li {
+  width: 100%;
+}
+/* 1.2.3考研内容第三部分 */
+.exam-content-three {
+  float: left;
+  height: 100%;
+  width: 189px;
+  /* background-color: violet; */
+  border-right: 1px solid #f2f2f2;
+}
+.exam-content-three-title {
+  height: 52px;
+  width: 100%;
+  font-weight: 700;
+  line-height: 52px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.exam-content-three-content-left {
+  float: left;
+  width: 70px;
+  height: 100%;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.exam-content-three-content-left img {
+  margin-bottom: 5px;
+}
+.exam-content-three-content-left p {
+  margin-bottom: 22px;
+  margin-left: 10px;
+}
+.exam-content-three-content-center {
+  float: left;
+  margin-left: 8px;
+}
+.exam-content-three-content-right h2 {
+  font-weight: normal;
+  color: #b2b2b2;
+  margin-bottom: 53px;
+}
+.exam-content-three-content-right p {
+  color: #6da5dc;
+}
+
+/* 1.2.4考研内容第四部分 */
+.exam-content-four {
+  float: left;
+  height: 100%;
+  width: 292px;
+  /* background-color: green; */
+}
+.exam-content-four-title {
+  height: 52px;
+  width: 282px;
+  line-height: 52px;
+  margin: 0 auto;
+  border-bottom: 4px solid #f6f6f6;
+}
+.exam-content-four-title span {
+  float: left;
+  width: 70px;
+  text-align: center;
+}
+.exam-content-four-title span:first-child {
+  border-bottom: 4px solid #e7e7e7;
+  font-weight: 700;
+}
+
+/* 1.2.4.2考研内容第四部分 上边 */
+.exam-content-four-top,
+.exam-content-four-center {
+  height: 106px;
+  width: 282px;
+  /* background-color: aquamarine; */
+  margin: 0 auto;
+  border: 1px solid transparent;
+}
+.exam-content-four-top,
+.exam-content-four-center {
+  border-bottom: 1px solid #f8f8f8;
+}
+.exam-content-four-top h3,
+.exam-content-four-center h3 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #787878;
+  margin-top: 18px;
+}
+.exam-content-four-top p,
+.exam-content-four-center p {
+  margin-top: 12px;
+}
+.exam-content-four-bottom li {
+  margin-left: 22px;
+}
+
+/* 底部开始 */
+
+.footer {
+  padding-top: 40px;
+  background-color: #f7f7f7;
+  border-top: 1px solid #d9d9d9;
+}
+
+.footer-help {
+  float: left;
+}
+
+.footer-help dl {
+  float: left;
+  margin-right: 120px;
+}
+
+.footer-help dt {
+  font-size: 12px;
+  color: #666666;
+  margin-bottom: 14px;
+  font-weight: bold;
+}
+
+.footer-help dd {
+  font-size: 12px;
+  color: #666666;
+  line-height: 20px;
+}
+
+.footer-freind {
+  width: 100%;
+  height: 110px;
+  background-color: #f7f7f7;
+}
+.biankuang {
+  border: 1px dashed #acacac;
+  margin-top: 55px;
+  height: 55px;
+}
+.biankuang-left {
+  float: left;
+  width: 61px;
+  height: 55px;
+  border-right: 1px dashed #acacac;
+}
+.biankuang-left span {
+  font-size: 17px;
+  /* font-weight: 100; */
+  color: #999;
+  margin-top: 10px;
+  box-sizing: border-box;
+  margin-left: 10px;
+}
+.biankuang-left .tt {
+  line-height: 25px;
+}
+.biankuang-left .ttt {
+  line-height: 25px;
+}
+.biankuang-right {
+  /* margin-top: 10px; */
+  margin-bottom: 10px;
+  margin-left: 80px;
+  padding-top: 10px;
+}
+.biankuang-right a {
+  display: inline;
+  font-weight: 100px;
+  font-size: 14px;
+  color: #999;
+  line-height: 20px;
+}
+.biankuang-right i {
+  margin: 0;
+  color: #999;
+}
+
+.footer-about {
+  width: 100%;
+  height: 50px;
+  background-color: #f7f7f7;
+}
+.zhong {
+  margin-top: 30px;
+  text-align: center;
+}
+.zhong a {
+  font-weight: 200;
+  font-size: 16px;
+}
+.zhong i {
+  margin: 0 5px;
+}
+
+.footer-bottom {
+  width: 100%;
+  height: 105px;
+  background-color: #f7f7f7;
+}
+
+.footer-bottom-bottom {
+  margin-top: 30px;
+  text-align: center;
+}
+.footer-bottom-bottom p {
+  color: #999999;
+  font-size: 14px;
+}
+
+.footer-team {
+  width: 100%;
+  height: 85px;
+  background-color: #f7f7f7;
+}
+.footer-team-bottom img {
+  margin-top: 33px;
+  margin-left: 236px;
+}
+.footer-teamm {
+  height: 100px;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+/* 底部结束 */

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/index.css">
+
+<body>
+    <ul class="container clearfix">
+
+      <li>
+        <h4>园林酒店</h4>
+      </li>
+      <li>
+        <h4>情侣酒店</h4>
+      </li>
+      
+      <li>
+        <h4>设计师酒店</h4>
+      </li>
+      <li>
+        <h4>青年旅舍</h4>
+      </li>
+      <li>
+        <h4>特色客栈</h4>
+      </li>
+  
+      <li>
+        <h4>海岛酒店</h4>
+      </li>
+      <li>
+        <h4>海外温泉</h4>
+      </li>
+    </ul>
+    <script src="./index.js"></script>
+  <script>
+    // 第一步初始化图片
+    
+    // 获取元素
+    
+
+    
+
+    var lis = document.querySelectorAll(".container>li")
+    
+    for(let i = 0;i<lis.length;i++){
+      lis[i].style.backgroundImage = ` url(./images/ifold${i+1}.jpg)`
+    }
+
+    // 手风琴的思路是：移动到哪个上面，对应的哪个li变宽(400)，别的宽度都是(133)
+    for(let i = 0;i<lis.length;i++){
+      lis[i].onmouseover = function(){
+         //移动到哪个上面，对应的哪个li变宽(400)，别的宽度都是(133)
+         //采用排他思想
+         for(let j = 0;j<lis.length;j++){
+            // 都变成宽度133
+            animate(lis[j],{"width":133})
+         }
+         // 当前的this是400
+         animate(this,{"width":400})
+      }
+    }
+
+
+  </script>
+</body>
+
+</html>

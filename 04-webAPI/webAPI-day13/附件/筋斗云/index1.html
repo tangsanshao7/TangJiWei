@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0
+    }
+
+    ul {
+      list-style: none
+    }
+
+    body {
+      background-color: #333;
+    }
+
+    .nav {
+      width: 800px;
+      height: 42px;
+      margin: 100px auto;
+      background: url(images/rss.png) right center no-repeat;
+      background-color: #fff;
+      border-radius: 10px;
+      position: relative;
+    }
+
+    .nav li {
+      width: 83px;
+      height: 42px;
+      text-align: center;
+      line-height: 42px;
+      float: left;
+      cursor: pointer;
+    }
+
+    .nav span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 83px;
+      height: 42px;
+      background: url(images/cloud.gif) no-repeat;
+    }
+
+    ul {
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+    <span id="cloud"></span>
+    <ul id="navBar">
+      <li>北京校区</li>
+      <li>上海校区</li>
+      <li>广州校区</li>
+      <li>深圳校区</li>
+      <li>武汉校区</li>
+      <li>关于我们</li>
+      <li>联系我们</li>
+      <li>招贤纳士</li>
+    </ul>
+  </div>
+</body>
+<script>
+  function animationSlow(obj, target) {
+    //1.清除之前的定时器
+    clearInterval(obj.timeID)
+    //2.开始移动:谁要移动就给谁一个定时器，避免与其他元素定时器冲突
+    obj.timeID = setInterval(function () {
+      //2.1 获取元素当前位置
+      var currentLeft = obj.offsetLeft
+      //2.2 计算本次需要运动距离
+      var step = (target - currentLeft) / 10
+      //2.3 如果是step为正数：右移     如果setp为负数：左移
+      //如果是正数，则需要向上取整  Math.ceil(0.3) = 1   如果是负数则需要向下取整 Math.ceil(-0.3) = 0  Math.floor(-0.3) = -1
+      step = step > 0 ? Math.ceil(step) : Math.floor(step)
+      //2.4 移动
+      currentLeft += step
+      obj.style.left = currentLeft + "px"
+      //2.5 到达终点清除定时器
+      if (currentLeft == target) {
+        clearInterval(obj.timeID)
+      }
+    }, 50);
+  }
+  var cloud = document.getElementById('cloud');//筋斗云
+  var navBar = document.getElementById('navBar');//ul
+
+  var ower = navBar.children[0];
+
+  for (var i = 0; i < navBar.children.length; i++) {
+    navBar.children[i].onmouseover = function () {
+      animationSlow(cloud, this.offsetLeft);
+    }
+    navBar.children[i].onmouseout = function () {
+      animationSlow(cloud, ower.offsetLeft);
+    }
+    navBar.children[i].onclick = function () {
+      ower = this;
+    }
+  }
+
+
+</script>
+
+</html>

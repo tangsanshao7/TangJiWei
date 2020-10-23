@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+</body>
+<script>
+  // 1)用户输入一个变量num，
+  // 2)如果 num 能同时被 3 和 5 整除，返回字符串 fizzbuzz
+  // 3)如果 num 能被 3 整除，返回字符串 fizz
+  // 4)如果 num 能被 5 整除，返回字符串 buzz
+  // 5)如果参数为空或者不是 Number 类型，返回 false
+  // 6)其余情况，返回参数 num
+
+  var n = +prompt("请输入输入数字")
+  if (n % 2 == 0) {
+    var sum = 1;
+    for (var i = 2; i <= n; i += 2) {
+      sum += 1 / i;
+    }
+    console.log(sum);
+  } else {
+    var sum = 1;
+    for (var i = 3; i <= n; i += 2) {
+      sum += 1 / i;
+    }
+    console.log(sum);
+  }
+
+</script>
+
+</html>

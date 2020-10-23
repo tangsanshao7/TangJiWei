@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 9.已知字符串："this is a test of java"
+      // (1) 取出子字符串"test"
+      // (2) 将'java'替换为'JAVASE'
+      var  str="this is a test of java";
+    //   将字符串变为数组  
+      var arr= str.split(' ');
+      console.log(arr[3]);
+    //   循环遍历数组
+      for(var i=0;i<arr.length;i++){
+        //   判断如果数组中有值等于java   
+        if(arr[i]=='java'){
+            // 就让他变为JAVASE
+            arr[i]='JAVASE'
+        }
+      }
+    //   将数组以空格隔开  变为字符串
+      var str=arr.join(' '); 
+      console.log(str);
+    </script>
+  </body>
+</html>

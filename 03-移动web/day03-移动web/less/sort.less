@@ -1,0 +1,140 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: url(../image/header-bg.png) repeat-x;
+  border-bottom: 1px solid #ccc;
+  .header-back {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    width: 14px;
+    height: 20px;
+    transform: translateY(-50%);
+    background-position: -24px 0px;
+  }
+  .header-search {
+    width: 100%;
+    height: 44px;
+    padding: 0 40px;
+    input {
+      width: 100%;
+      height: 30px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      margin-top: 7px;
+      padding: 0 5px;
+    }
+  }
+  .header-menu {
+    position: absolute;
+    top: 50%;
+    right: 9px;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+    background-position: -61px 0px;
+  }
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  top: 40px;
+
+  display: flex;
+  position: fixed;
+  aside {
+    width: 90px;
+    // background-color: red;
+    float: left;
+    overflow: hidden;
+
+    ul {
+      width: 100%;
+      height: 100%;
+      // margin-top: 40px;
+      text-align: center;
+      li {
+        width: 100%;
+        height: 50px;
+        background-color: #f3f4f6;
+        border: 1px solid #ccc;
+        border-top: none;
+        line-height: 50px;
+      }
+    }
+  }
+  section {
+    flex: 1;
+    // background-color: green;
+    // margin-top: 40px;
+    .sort {
+      width: 100%;
+      padding: 0 10px;
+      .sort-title {
+        font-size: 12px;
+        color: #888;
+        line-height: 1;
+        padding: 20px 0 10px;
+        font-weight: 700;
+      }
+      ul {
+        width: 100%;
+        overflow: hidden;
+        border-top: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        li {
+          float: left;
+          width: 33.33333%;
+          height: 50px;
+          border-bottom: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+          text-align: center;
+          a {
+            color: #000;
+            line-height: 50px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .panel {
+      width: 100%;
+      padding: 0 10px;
+      .sort-title {
+        font-size: 12px;
+        color: #888;
+        line-height: 1;
+        padding: 20px 0 10px;
+        font-weight: 700;
+      }
+      ul {
+        width: 100%;
+        overflow: hidden;
+        li {
+          float: left;
+          width: 33.3333333%;
+          text-align: center;
+          a {
+            display: block;
+            width: 100%;
+            color: #000;
+            font-size: 12px;
+            img {
+              width: 100%;
+            }
+            span {
+              display: block;
+              padding-top: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
