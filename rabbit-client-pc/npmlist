@@ -1,0 +1,650 @@
+rabbit-client-pc@0.1.0 D:\07代码\code\rabbit-client-pc
++-- UNMET DEPENDENCY @vueuse/core@6.1.0
+| +-- UNMET DEPENDENCY @vueuse/shared@6.1.0
+| | `-- UNMET DEPENDENCY vue-demi@0.12.1
+| `-- UNMET DEPENDENCY vue-demi@0.12.1
++-- UNMET DEPENDENCY axios@0.24.0
+| `-- UNMET DEPENDENCY follow-redirects@1.14.5
++-- UNMET DEPENDENCY core-js@3.19.1
++-- UNMET DEPENDENCY json-server@0.17.0
+| +-- UNMET DEPENDENCY body-parser@1.19.0
+| | +-- UNMET DEPENDENCY bytes@3.1.0
+| | +-- UNMET DEPENDENCY content-type@1.0.4
+| | +-- UNMET DEPENDENCY debug@2.6.9
+| | | `-- UNMET DEPENDENCY ms@2.0.0
+| | +-- UNMET DEPENDENCY depd@1.1.2
+| | +-- UNMET DEPENDENCY http-errors@1.7.2
+| | | +-- UNMET DEPENDENCY depd@1.1.2
+| | | +-- UNMET DEPENDENCY inherits@2.0.3
+| | | +-- UNMET DEPENDENCY setprototypeof@1.1.1
+| | | +-- UNMET DEPENDENCY statuses@1.5.0
+| | | `-- UNMET DEPENDENCY toidentifier@1.0.0
+| | +-- UNMET DEPENDENCY iconv-lite@0.4.24
+| | | `-- UNMET DEPENDENCY safer-buffer@2.1.2
+| | +-- UNMET DEPENDENCY on-finished@2.3.0
+| | | `-- UNMET DEPENDENCY ee-first@1.1.1
+| | +-- UNMET DEPENDENCY qs@6.7.0
+| | +-- UNMET DEPENDENCY raw-body@2.4.0
+| | | +-- UNMET DEPENDENCY bytes@3.1.0
+| | | +-- UNMET DEPENDENCY http-errors@1.7.2
+| | | +-- UNMET DEPENDENCY iconv-lite@0.4.24
+| | | `-- UNMET DEPENDENCY unpipe@1.0.0
+| | `-- UNMET DEPENDENCY type-is@1.6.18
+| |   +-- UNMET DEPENDENCY media-typer@0.3.0
+| |   `-- UNMET DEPENDENCY mime-types@2.1.33
+| |     `-- UNMET DEPENDENCY mime-db@1.50.0
+| +-- UNMET DEPENDENCY chalk@4.1.2
+| | +-- UNMET DEPENDENCY ansi-styles@4.3.0
+| | | `-- UNMET DEPENDENCY color-convert@2.0.1
+| | |   `-- UNMET DEPENDENCY color-name@1.1.4
+| | `-- UNMET DEPENDENCY supports-color@7.2.0
+| |   `-- UNMET DEPENDENCY has-flag@4.0.0
+| +-- UNMET DEPENDENCY compression@1.7.4
+| | +-- UNMET DEPENDENCY accepts@1.3.7
+| | | +-- UNMET DEPENDENCY mime-types@2.1.33
+| | | `-- UNMET DEPENDENCY negotiator@0.6.2
+| | +-- UNMET DEPENDENCY bytes@3.0.0
+| | +-- UNMET DEPENDENCY compressible@2.0.18
+| | | `-- UNMET DEPENDENCY mime-db@1.50.0
+| | +-- UNMET DEPENDENCY debug@2.6.9
+| | | `-- UNMET DEPENDENCY ms@2.0.0
+| | +-- UNMET DEPENDENCY on-headers@1.0.2
+| | +-- UNMET DEPENDENCY safe-buffer@5.1.2
+| | `-- UNMET DEPENDENCY vary@1.1.2
+| +-- UNMET DEPENDENCY connect-pause@0.1.1
+| +-- UNMET DEPENDENCY cors@2.8.5
+| | +-- UNMET DEPENDENCY object-assign@4.1.1
+| | `-- UNMET DEPENDENCY vary@1.1.2
+| +-- UNMET DEPENDENCY errorhandler@1.5.1
+| | +-- UNMET DEPENDENCY accepts@1.3.7
+| | `-- UNMET DEPENDENCY escape-html@1.0.3
+| +-- UNMET DEPENDENCY express@4.17.1
+| | +-- UNMET DEPENDENCY accepts@1.3.7
+| | +-- UNMET DEPENDENCY array-flatten@1.1.1
+| | +-- UNMET DEPENDENCY body-parser@1.19.0
+| | +-- UNMET DEPENDENCY content-disposition@0.5.3
+| | | `-- UNMET DEPENDENCY safe-buffer@5.1.2
+| | +-- UNMET DEPENDENCY content-type@1.0.4
+| | +-- UNMET DEPENDENCY cookie@0.4.0
+| | +-- UNMET DEPENDENCY cookie-signature@1.0.6
+| | +-- UNMET DEPENDENCY debug@2.6.9
+| | | `-- UNMET DEPENDENCY ms@2.0.0
+| | +-- UNMET DEPENDENCY depd@1.1.2
+| | +-- UNMET DEPENDENCY encodeurl@1.0.2
+| | +-- UNMET DEPENDENCY escape-html@1.0.3
+| | +-- UNMET DEPENDENCY etag@1.8.1
+| | +-- UNMET DEPENDENCY finalhandler@1.1.2
+| | | +-- UNMET DEPENDENCY debug@2.6.9
+| | | | `-- UNMET DEPENDENCY ms@2.0.0
+| | | +-- UNMET DEPENDENCY encodeurl@1.0.2
+| | | +-- UNMET DEPENDENCY escape-html@1.0.3
+| | | +-- UNMET DEPENDENCY on-finished@2.3.0
+| | | +-- UNMET DEPENDENCY parseurl@1.3.3
+| | | +-- UNMET DEPENDENCY statuses@1.5.0
+| | | `-- UNMET DEPENDENCY unpipe@1.0.0
+| | +-- UNMET DEPENDENCY fresh@0.5.2
+| | +-- UNMET DEPENDENCY merge-descriptors@1.0.1
+| | +-- UNMET DEPENDENCY methods@1.1.2
+| | +-- UNMET DEPENDENCY on-finished@2.3.0
+| | +-- UNMET DEPENDENCY parseurl@1.3.3
+| | +-- UNMET DEPENDENCY path-to-regexp@0.1.7
+| | +-- UNMET DEPENDENCY proxy-addr@2.0.7
+| | | +-- UNMET DEPENDENCY forwarded@0.2.0
+| | | `-- UNMET DEPENDENCY ipaddr.js@1.9.1
+| | +-- UNMET DEPENDENCY qs@6.7.0
+| | +-- UNMET DEPENDENCY range-parser@1.2.1
+| | +-- UNMET DEPENDENCY safe-buffer@5.1.2
+| | +-- UNMET DEPENDENCY send@0.17.1
+| | | +-- UNMET DEPENDENCY debug@2.6.9
+| | | | `-- UNMET DEPENDENCY ms@2.0.0
+| | | +-- UNMET DEPENDENCY depd@1.1.2
+| | | +-- UNMET DEPENDENCY destroy@1.0.4
+| | | +-- UNMET DEPENDENCY encodeurl@1.0.2
+| | | +-- UNMET DEPENDENCY escape-html@1.0.3
+| | | +-- UNMET DEPENDENCY etag@1.8.1
+| | | +-- UNMET DEPENDENCY fresh@0.5.2
+| | | +-- UNMET DEPENDENCY http-errors@1.7.2
+| | | +-- UNMET DEPENDENCY mime@1.6.0
+| | | +-- UNMET DEPENDENCY ms@2.1.1
+| | | +-- UNMET DEPENDENCY on-finished@2.3.0
+| | | +-- UNMET DEPENDENCY range-parser@1.2.1
+| | | `-- UNMET DEPENDENCY statuses@1.5.0
+| | +-- UNMET DEPENDENCY serve-static@1.14.1
+| | | +-- UNMET DEPENDENCY encodeurl@1.0.2
+| | | +-- UNMET DEPENDENCY escape-html@1.0.3
+| | | +-- UNMET DEPENDENCY parseurl@1.3.3
+| | | `-- UNMET DEPENDENCY send@0.17.1
+| | +-- UNMET DEPENDENCY setprototypeof@1.1.1
+| | +-- UNMET DEPENDENCY statuses@1.5.0
+| | +-- UNMET DEPENDENCY type-is@1.6.18
+| | +-- UNMET DEPENDENCY utils-merge@1.0.1
+| | `-- UNMET DEPENDENCY vary@1.1.2
+| +-- UNMET DEPENDENCY express-urlrewrite@1.4.0
+| | +-- UNMET DEPENDENCY debug@4.3.2
+| | | `-- UNMET DEPENDENCY ms@2.1.2
+| | `-- UNMET DEPENDENCY path-to-regexp@1.8.0
+| |   `-- UNMET DEPENDENCY isarray@0.0.1
+| +-- UNMET DEPENDENCY json-parse-helpfulerror@1.0.3
+| | `-- UNMET DEPENDENCY jju@1.4.0
+| +-- UNMET DEPENDENCY lodash@4.17.21
+| +-- UNMET DEPENDENCY lodash-id@0.14.1
+| +-- UNMET DEPENDENCY lowdb@1.0.0
+| | +-- UNMET DEPENDENCY graceful-fs@4.2.8
+| | +-- UNMET DEPENDENCY is-promise@2.2.2
+| | +-- UNMET DEPENDENCY lodash@4.17.21
+| | +-- UNMET DEPENDENCY pify@3.0.0
+| | `-- UNMET DEPENDENCY steno@0.4.4
+| |   `-- UNMET DEPENDENCY graceful-fs@4.2.8
+| +-- UNMET DEPENDENCY method-override@3.0.0
+| | +-- UNMET DEPENDENCY debug@3.1.0
+| | | `-- UNMET DEPENDENCY ms@2.0.0
+| | +-- UNMET DEPENDENCY methods@1.1.2
+| | +-- UNMET DEPENDENCY parseurl@1.3.3
+| | `-- UNMET DEPENDENCY vary@1.1.2
+| +-- UNMET DEPENDENCY morgan@1.10.0
+| | +-- UNMET DEPENDENCY basic-auth@2.0.1
+| | | `-- UNMET DEPENDENCY safe-buffer@5.1.2
+| | +-- UNMET DEPENDENCY debug@2.6.9
+| | | `-- UNMET DEPENDENCY ms@2.0.0
+| | +-- UNMET DEPENDENCY depd@2.0.0
+| | +-- UNMET DEPENDENCY on-finished@2.3.0
+| | `-- UNMET DEPENDENCY on-headers@1.0.2
+| +-- UNMET DEPENDENCY nanoid@3.1.30
+| +-- UNMET DEPENDENCY please-upgrade-node@3.2.0
+| | `-- UNMET DEPENDENCY semver-compare@1.0.0
+| +-- UNMET DEPENDENCY pluralize@8.0.0
+| +-- UNMET DEPENDENCY server-destroy@1.0.1
+| +-- UNMET DEPENDENCY update-notifier@5.1.0
+| | +-- UNMET DEPENDENCY boxen@5.1.2
+| | | +-- UNMET DEPENDENCY ansi-align@3.0.1
+| | | | `-- UNMET DEPENDENCY string-width@4.2.3
+| | | +-- UNMET DEPENDENCY camelcase@6.2.0
+| | | +-- UNMET DEPENDENCY chalk@4.1.2
+| | | | +-- UNMET DEPENDENCY ansi-styles@4.3.0
+| | | | | `-- UNMET DEPENDENCY color-convert@2.0.1
+| | | | |   `-- UNMET DEPENDENCY color-name@1.1.4
+| | | | `-- UNMET DEPENDENCY supports-color@7.2.0
+| | | |   `-- UNMET DEPENDENCY has-flag@4.0.0
+| | | +-- UNMET DEPENDENCY cli-boxes@2.2.1
+| | | +-- UNMET DEPENDENCY string-width@4.2.3
+| | | +-- UNMET DEPENDENCY type-fest@0.20.2
+| | | +-- UNMET DEPENDENCY widest-line@3.1.0
+| | | | `-- UNMET DEPENDENCY string-width@4.2.3
+| | | `-- UNMET DEPENDENCY wrap-ansi@7.0.0
+| | +-- UNMET DEPENDENCY chalk@4.1.2
+| | | +-- UNMET DEPENDENCY ansi-styles@4.3.0
+| | | | `-- UNMET DEPENDENCY color-convert@2.0.1
+| | | |   `-- UNMET DEPENDENCY color-name@1.1.4
+| | | `-- UNMET DEPENDENCY supports-color@7.2.0
+| | |   `-- UNMET DEPENDENCY has-flag@4.0.0
+| | +-- UNMET DEPENDENCY configstore@5.0.1
+| | | +-- UNMET DEPENDENCY dot-prop@5.3.0
+| | | | `-- UNMET DEPENDENCY is-obj@2.0.0
+| | | +-- UNMET DEPENDENCY graceful-fs@4.2.8
+| | | +-- UNMET DEPENDENCY make-dir@3.1.0
+| | | | `-- UNMET DEPENDENCY semver@6.3.0
+| | | +-- UNMET DEPENDENCY unique-string@2.0.0
+| | | | `-- UNMET DEPENDENCY crypto-random-string@2.0.0
+| | | +-- UNMET DEPENDENCY write-file-atomic@3.0.3
+| | | | +-- UNMET DEPENDENCY imurmurhash@0.1.4
+| | | | +-- UNMET DEPENDENCY is-typedarray@1.0.0
+| | | | +-- UNMET DEPENDENCY signal-exit@3.0.5
+| | | | `-- UNMET DEPENDENCY typedarray-to-buffer@3.1.5
+| | | |   `-- UNMET DEPENDENCY is-typedarray@1.0.0
+| | | `-- UNMET DEPENDENCY xdg-basedir@4.0.0
+| | +-- UNMET DEPENDENCY has-yarn@2.1.0
+| | +-- UNMET DEPENDENCY import-lazy@2.1.0
+| | +-- UNMET DEPENDENCY is-ci@2.0.0
+| | | `-- UNMET DEPENDENCY ci-info@2.0.0
+| | +-- UNMET DEPENDENCY is-installed-globally@0.4.0
+| | | +-- UNMET DEPENDENCY global-dirs@3.0.0
+| | | | `-- UNMET DEPENDENCY ini@2.0.0
+| | | `-- UNMET DEPENDENCY is-path-inside@3.0.3
+| | +-- UNMET DEPENDENCY is-npm@5.0.0
+| | +-- UNMET DEPENDENCY is-yarn-global@0.3.0
+| | +-- UNMET DEPENDENCY latest-version@5.1.0
+| | | `-- UNMET DEPENDENCY package-json@6.5.0
+| | |   +-- UNMET DEPENDENCY got@9.6.0
+| | |   | +-- UNMET DEPENDENCY @sindresorhus/is@0.14.0
+| | |   | +-- UNMET DEPENDENCY @szmarczak/http-timer@1.1.2
+| | |   | | `-- UNMET DEPENDENCY defer-to-connect@1.1.3
+| | |   | +-- UNMET DEPENDENCY cacheable-request@6.1.0
+| | |   | | +-- UNMET DEPENDENCY clone-response@1.0.2
+| | |   | | | `-- UNMET DEPENDENCY mimic-response@1.0.1
+| | |   | | +-- UNMET DEPENDENCY get-stream@5.2.0
+| | |   | | | `-- UNMET DEPENDENCY pump@3.0.0
+| | |   | | +-- UNMET DEPENDENCY http-cache-semantics@4.1.0
+| | |   | | +-- UNMET DEPENDENCY keyv@3.1.0
+| | |   | | | `-- UNMET DEPENDENCY json-buffer@3.0.0
+| | |   | | +-- UNMET DEPENDENCY lowercase-keys@2.0.0
+| | |   | | +-- UNMET DEPENDENCY normalize-url@4.5.1
+| | |   | | `-- UNMET DEPENDENCY responselike@1.0.2
+| | |   | |   `-- UNMET DEPENDENCY lowercase-keys@1.0.1
+| | |   | +-- UNMET DEPENDENCY decompress-response@3.3.0
+| | |   | | `-- UNMET DEPENDENCY mimic-response@1.0.1
+| | |   | +-- UNMET DEPENDENCY duplexer3@0.1.4
+| | |   | +-- UNMET DEPENDENCY get-stream@4.1.0
+| | |   | | `-- UNMET DEPENDENCY pump@3.0.0
+| | |   | |   +-- UNMET DEPENDENCY end-of-stream@1.4.4
+| | |   | |   | `-- UNMET DEPENDENCY once@1.4.0
+| | |   | |   `-- UNMET DEPENDENCY once@1.4.0
+| | |   | |     `-- UNMET DEPENDENCY wrappy@1.0.2
+| | |   | +-- UNMET DEPENDENCY lowercase-keys@1.0.1
+| | |   | +-- UNMET DEPENDENCY mimic-response@1.0.1
+| | |   | +-- UNMET DEPENDENCY p-cancelable@1.1.0
+| | |   | +-- UNMET DEPENDENCY to-readable-stream@1.0.0
+| | |   | `-- UNMET DEPENDENCY url-parse-lax@3.0.0
+| | |   |   `-- UNMET DEPENDENCY prepend-http@2.0.0
+| | |   +-- UNMET DEPENDENCY registry-auth-token@4.2.1
+| | |   | `-- UNMET DEPENDENCY rc@1.2.8
+| | |   |   +-- UNMET DEPENDENCY deep-extend@0.6.0
+| | |   |   +-- UNMET DEPENDENCY ini@1.3.8
+| | |   |   +-- UNMET DEPENDENCY minimist@1.2.5
+| | |   |   `-- UNMET DEPENDENCY strip-json-comments@2.0.1
+| | |   +-- UNMET DEPENDENCY registry-url@5.1.0
+| | |   | `-- UNMET DEPENDENCY rc@1.2.8
+| | |   `-- UNMET DEPENDENCY semver@6.3.0
+| | +-- UNMET DEPENDENCY pupa@2.1.1
+| | | `-- UNMET DEPENDENCY escape-goat@2.1.1
+| | +-- UNMET DEPENDENCY semver@7.3.5
+| | | `-- UNMET DEPENDENCY lru-cache@6.0.0
+| | |   `-- UNMET DEPENDENCY yallist@4.0.0
+| | +-- UNMET DEPENDENCY semver-diff@3.1.1
+| | | `-- UNMET DEPENDENCY semver@6.3.0
+| | `-- UNMET DEPENDENCY xdg-basedir@4.0.0
+| `-- UNMET DEPENDENCY yargs@17.2.1
+|   +-- UNMET DEPENDENCY cliui@7.0.4
+|   | +-- UNMET DEPENDENCY string-width@4.2.3
+|   | +-- UNMET DEPENDENCY strip-ansi@6.0.1
+|   | | `-- UNMET DEPENDENCY ansi-regex@5.0.1
+|   | `-- UNMET DEPENDENCY wrap-ansi@7.0.0
+|   |   +-- UNMET DEPENDENCY ansi-styles@4.3.0
+|   |   | `-- UNMET DEPENDENCY color-convert@2.0.1
+|   |   |   `-- UNMET DEPENDENCY color-name@1.1.4
+|   |   +-- UNMET DEPENDENCY string-width@4.2.3
+|   |   `-- UNMET DEPENDENCY strip-ansi@6.0.1
+|   +-- UNMET DEPENDENCY escalade@3.1.1
+|   +-- UNMET DEPENDENCY get-caller-file@2.0.5
+|   +-- UNMET DEPENDENCY require-directory@2.1.1
+|   +-- UNMET DEPENDENCY string-width@4.2.3
+|   | +-- UNMET DEPENDENCY emoji-regex@8.0.0
+|   | +-- UNMET DEPENDENCY is-fullwidth-code-point@3.0.0
+|   | `-- UNMET DEPENDENCY strip-ansi@6.0.1
+|   +-- UNMET DEPENDENCY y18n@5.0.8
+|   `-- UNMET DEPENDENCY yargs-parser@20.2.9
++-- UNMET DEPENDENCY normalize.css@8.0.1
++-- UNMET DEPENDENCY vue@3.2.21
+| +-- UNMET DEPENDENCY @vue/compiler-dom@3.2.21
+| | +-- UNMET DEPENDENCY @vue/compiler-core@3.2.21
+| | | +-- UNMET DEPENDENCY @babel/parser@7.16.2
+| | | +-- UNMET DEPENDENCY @vue/shared@3.2.21
+| | | +-- UNMET DEPENDENCY estree-walker@2.0.2
+| | | `-- UNMET DEPENDENCY source-map@0.6.1
+| | `-- UNMET DEPENDENCY @vue/shared@3.2.21
+| +-- UNMET DEPENDENCY @vue/compiler-sfc@3.2.21
+| | +-- UNMET DEPENDENCY @babel/parser@7.16.2
+| | +-- UNMET DEPENDENCY @vue/compiler-core@3.2.21
+| | +-- UNMET DEPENDENCY @vue/compiler-dom@3.2.21
+| | +-- UNMET DEPENDENCY @vue/compiler-ssr@3.2.21
+| | | +-- UNMET DEPENDENCY @vue/compiler-dom@3.2.21
+| | | `-- UNMET DEPENDENCY @vue/shared@3.2.21
+| | +-- UNMET DEPENDENCY @vue/ref-transform@3.2.21
+| | | +-- UNMET DEPENDENCY @babel/parser@7.16.2
+| | | +-- UNMET DEPENDENCY @vue/compiler-core@3.2.21
+| | | +-- UNMET DEPENDENCY @vue/shared@3.2.21
+| | | +-- UNMET DEPENDENCY estree-walker@2.0.2
+| | | `-- UNMET DEPENDENCY magic-string@0.25.7
+| | +-- UNMET DEPENDENCY @vue/shared@3.2.21
+| | +-- UNMET DEPENDENCY estree-walker@2.0.2
+| | +-- UNMET DEPENDENCY magic-string@0.25.7
+| | | `-- UNMET DEPENDENCY sourcemap-codec@1.4.8
+| | +-- UNMET DEPENDENCY postcss@8.3.11
+| | | +-- UNMET DEPENDENCY nanoid@3.1.30
+| | | +-- UNMET DEPENDENCY picocolors@1.0.0
+| | | `-- UNMET DEPENDENCY source-map-js@0.6.2
+| | `-- UNMET DEPENDENCY source-map@0.6.1
+| +-- UNMET DEPENDENCY @vue/runtime-dom@3.2.21
+| | +-- UNMET DEPENDENCY @vue/runtime-core@3.2.21
+| | | +-- UNMET DEPENDENCY @vue/reactivity@3.2.21
+| | | | `-- UNMET DEPENDENCY @vue/shared@3.2.21
+| | | `-- UNMET DEPENDENCY @vue/shared@3.2.21
+| | +-- UNMET DEPENDENCY @vue/shared@3.2.21
+| | `-- UNMET DEPENDENCY csstype@2.6.18
+| +-- UNMET DEPENDENCY @vue/server-renderer@3.2.21
+| | +-- UNMET DEPENDENCY @vue/compiler-ssr@3.2.21
+| | `-- UNMET DEPENDENCY @vue/shared@3.2.21
+| `-- UNMET DEPENDENCY @vue/shared@3.2.21
++-- UNMET OPTIONAL DEPENDENCY vue-loader-v16@npm:vue-loader@16.8.3
++-- UNMET DEPENDENCY vue-router@4.0.12
+| `-- UNMET DEPENDENCY @vue/devtools-api@6.0.0-beta.20
++-- UNMET DEPENDENCY vuex@4.0.2
+| `-- UNMET DEPENDENCY @vue/devtools-api@6.0.0-beta.20
+`-- UNMET DEPENDENCY vuex-persistedstate@4.1.0
+  +-- UNMET DEPENDENCY deepmerge@4.2.2
+  `-- UNMET DEPENDENCY shvl@2.0.3
+
+rabbit-client-pc@0.1.0 D:\07代码\code\rabbit-client-pc
++-- UNMET DEPENDENCY @vueuse/core@6.1.0
+| +-- UNMET DEPENDENCY @vueuse/shared@6.1.0
+| | `-- UNMET DEPENDENCY vue-demi@0.12.1
+| `-- UNMET DEPENDENCY vue-demi@0.12.1
++-- UNMET DEPENDENCY axios@0.24.0
+| `-- UNMET DEPENDENCY follow-redirects@1.14.5
++-- UNMET DEPENDENCY core-js@3.19.1
++-- UNMET DEPENDENCY json-server@0.17.0
+| +-- UNMET DEPENDENCY body-parser@1.19.0
+| | +-- UNMET DEPENDENCY bytes@3.1.0
+| | +-- UNMET DEPENDENCY content-type@1.0.4
+| | +-- UNMET DEPENDENCY debug@2.6.9
+| | | `-- UNMET DEPENDENCY ms@2.0.0
+| | +-- UNMET DEPENDENCY depd@1.1.2
+| | +-- UNMET DEPENDENCY http-errors@1.7.2
+| | | +-- UNMET DEPENDENCY depd@1.1.2
+| | | +-- UNMET DEPENDENCY inherits@2.0.3
+| | | +-- UNMET DEPENDENCY setprototypeof@1.1.1
+| | | +-- UNMET DEPENDENCY statuses@1.5.0
+| | | `-- UNMET DEPENDENCY toidentifier@1.0.0
+| | +-- UNMET DEPENDENCY iconv-lite@0.4.24
+| | | `-- UNMET DEPENDENCY safer-buffer@2.1.2
+| | +-- UNMET DEPENDENCY on-finished@2.3.0
+| | | `-- UNMET DEPENDENCY ee-first@1.1.1
+| | +-- UNMET DEPENDENCY qs@6.7.0
+| | +-- UNMET DEPENDENCY raw-body@2.4.0
+| | | +-- UNMET DEPENDENCY bytes@3.1.0
+| | | +-- UNMET DEPENDENCY http-errors@1.7.2
+| | | +-- UNMET DEPENDENCY iconv-lite@0.4.24
+| | | `-- UNMET DEPENDENCY unpipe@1.0.0
+| | `-- UNMET DEPENDENCY type-is@1.6.18
+| |   +-- UNMET DEPENDENCY media-typer@0.3.0
+| |   `-- UNMET DEPENDENCY mime-types@2.1.33
+| |     `-- UNMET DEPENDENCY mime-db@1.50.0
+| +-- UNMET DEPENDENCY chalk@4.1.2
+| | +-- UNMET DEPENDENCY ansi-styles@4.3.0
+| | | `-- UNMET DEPENDENCY color-convert@2.0.1
+| | |   `-- UNMET DEPENDENCY color-name@1.1.4
+| | `-- UNMET DEPENDENCY supports-color@7.2.0
+| |   `-- UNMET DEPENDENCY has-flag@4.0.0
+| +-- UNMET DEPENDENCY compression@1.7.4
+| | +-- UNMET DEPENDENCY accepts@1.3.7
+| | | +-- UNMET DEPENDENCY mime-types@2.1.33
+| | | `-- UNMET DEPENDENCY negotiator@0.6.2
+| | +-- UNMET DEPENDENCY bytes@3.0.0
+| | +-- UNMET DEPENDENCY compressible@2.0.18
+| | | `-- UNMET DEPENDENCY mime-db@1.50.0
+| | +-- UNMET DEPENDENCY debug@2.6.9
+| | | `-- UNMET DEPENDENCY ms@2.0.0
+| | +-- UNMET DEPENDENCY on-headers@1.0.2
+| | +-- UNMET DEPENDENCY safe-buffer@5.1.2
+| | `-- UNMET DEPENDENCY vary@1.1.2
+| +-- UNMET DEPENDENCY connect-pause@0.1.1
+| +-- UNMET DEPENDENCY cors@2.8.5
+| | +-- UNMET DEPENDENCY object-assign@4.1.1
+| | `-- UNMET DEPENDENCY vary@1.1.2
+| +-- UNMET DEPENDENCY errorhandler@1.5.1
+| | +-- UNMET DEPENDENCY accepts@1.3.7
+| | `-- UNMET DEPENDENCY escape-html@1.0.3
+| +-- UNMET DEPENDENCY express@4.17.1
+| | +-- UNMET DEPENDENCY accepts@1.3.7
+| | +-- UNMET DEPENDENCY array-flatten@1.1.1
+| | +-- UNMET DEPENDENCY body-parser@1.19.0
+| | +-- UNMET DEPENDENCY content-disposition@0.5.3
+| | | `-- UNMET DEPENDENCY safe-buffer@5.1.2
+| | +-- UNMET DEPENDENCY content-type@1.0.4
+| | +-- UNMET DEPENDENCY cookie@0.4.0
+| | +-- UNMET DEPENDENCY cookie-signature@1.0.6
+| | +-- UNMET DEPENDENCY debug@2.6.9
+| | | `-- UNMET DEPENDENCY ms@2.0.0
+| | +-- UNMET DEPENDENCY depd@1.1.2
+| | +-- UNMET DEPENDENCY encodeurl@1.0.2
+| | +-- UNMET DEPENDENCY escape-html@1.0.3
+| | +-- UNMET DEPENDENCY etag@1.8.1
+| | +-- UNMET DEPENDENCY finalhandler@1.1.2
+| | | +-- UNMET DEPENDENCY debug@2.6.9
+| | | | `-- UNMET DEPENDENCY ms@2.0.0
+| | | +-- UNMET DEPENDENCY encodeurl@1.0.2
+| | | +-- UNMET DEPENDENCY escape-html@1.0.3
+| | | +-- UNMET DEPENDENCY on-finished@2.3.0
+| | | +-- UNMET DEPENDENCY parseurl@1.3.3
+| | | +-- UNMET DEPENDENCY statuses@1.5.0
+| | | `-- UNMET DEPENDENCY unpipe@1.0.0
+| | +-- UNMET DEPENDENCY fresh@0.5.2
+| | +-- UNMET DEPENDENCY merge-descriptors@1.0.1
+| | +-- UNMET DEPENDENCY methods@1.1.2
+| | +-- UNMET DEPENDENCY on-finished@2.3.0
+| | +-- UNMET DEPENDENCY parseurl@1.3.3
+| | +-- UNMET DEPENDENCY path-to-regexp@0.1.7
+| | +-- UNMET DEPENDENCY proxy-addr@2.0.7
+| | | +-- UNMET DEPENDENCY forwarded@0.2.0
+| | | `-- UNMET DEPENDENCY ipaddr.js@1.9.1
+| | +-- UNMET DEPENDENCY qs@6.7.0
+| | +-- UNMET DEPENDENCY range-parser@1.2.1
+| | +-- UNMET DEPENDENCY safe-buffer@5.1.2
+| | +-- UNMET DEPENDENCY send@0.17.1
+| | | +-- UNMET DEPENDENCY debug@2.6.9
+| | | | `-- UNMET DEPENDENCY ms@2.0.0
+| | | +-- UNMET DEPENDENCY depd@1.1.2
+| | | +-- UNMET DEPENDENCY destroy@1.0.4
+| | | +-- UNMET DEPENDENCY encodeurl@1.0.2
+| | | +-- UNMET DEPENDENCY escape-html@1.0.3
+| | | +-- UNMET DEPENDENCY etag@1.8.1
+| | | +-- UNMET DEPENDENCY fresh@0.5.2
+| | | +-- UNMET DEPENDENCY http-errors@1.7.2
+| | | +-- UNMET DEPENDENCY mime@1.6.0
+| | | +-- UNMET DEPENDENCY ms@2.1.1
+| | | +-- UNMET DEPENDENCY on-finished@2.3.0
+| | | +-- UNMET DEPENDENCY range-parser@1.2.1
+| | | `-- UNMET DEPENDENCY statuses@1.5.0
+| | +-- UNMET DEPENDENCY serve-static@1.14.1
+| | | +-- UNMET DEPENDENCY encodeurl@1.0.2
+| | | +-- UNMET DEPENDENCY escape-html@1.0.3
+| | | +-- UNMET DEPENDENCY parseurl@1.3.3
+| | | `-- UNMET DEPENDENCY send@0.17.1
+| | +-- UNMET DEPENDENCY setprototypeof@1.1.1
+| | +-- UNMET DEPENDENCY statuses@1.5.0
+| | +-- UNMET DEPENDENCY type-is@1.6.18
+| | +-- UNMET DEPENDENCY utils-merge@1.0.1
+| | `-- UNMET DEPENDENCY vary@1.1.2
+| +-- UNMET DEPENDENCY express-urlrewrite@1.4.0
+| | +-- UNMET DEPENDENCY debug@4.3.2
+| | | `-- UNMET DEPENDENCY ms@2.1.2
+| | `-- UNMET DEPENDENCY path-to-regexp@1.8.0
+| |   `-- UNMET DEPENDENCY isarray@0.0.1
+| +-- UNMET DEPENDENCY json-parse-helpfulerror@1.0.3
+| | `-- UNMET DEPENDENCY jju@1.4.0
+| +-- UNMET DEPENDENCY lodash@4.17.21
+| +-- UNMET DEPENDENCY lodash-id@0.14.1
+| +-- UNMET DEPENDENCY lowdb@1.0.0
+| | +-- UNMET DEPENDENCY graceful-fs@4.2.8
+| | +-- UNMET DEPENDENCY is-promise@2.2.2
+| | +-- UNMET DEPENDENCY lodash@4.17.21
+| | +-- UNMET DEPENDENCY pify@3.0.0
+| | `-- UNMET DEPENDENCY steno@0.4.4
+| |   `-- UNMET DEPENDENCY graceful-fs@4.2.8
+| +-- UNMET DEPENDENCY method-override@3.0.0
+| | +-- UNMET DEPENDENCY debug@3.1.0
+| | | `-- UNMET DEPENDENCY ms@2.0.0
+| | +-- UNMET DEPENDENCY methods@1.1.2
+| | +-- UNMET DEPENDENCY parseurl@1.3.3
+| | `-- UNMET DEPENDENCY vary@1.1.2
+| +-- UNMET DEPENDENCY morgan@1.10.0
+| | +-- UNMET DEPENDENCY basic-auth@2.0.1
+| | | `-- UNMET DEPENDENCY safe-buffer@5.1.2
+| | +-- UNMET DEPENDENCY debug@2.6.9
+| | | `-- UNMET DEPENDENCY ms@2.0.0
+| | +-- UNMET DEPENDENCY depd@2.0.0
+| | +-- UNMET DEPENDENCY on-finished@2.3.0
+| | `-- UNMET DEPENDENCY on-headers@1.0.2
+| +-- UNMET DEPENDENCY nanoid@3.1.30
+| +-- UNMET DEPENDENCY please-upgrade-node@3.2.0
+| | `-- UNMET DEPENDENCY semver-compare@1.0.0
+| +-- UNMET DEPENDENCY pluralize@8.0.0
+| +-- UNMET DEPENDENCY server-destroy@1.0.1
+| +-- UNMET DEPENDENCY update-notifier@5.1.0
+| | +-- UNMET DEPENDENCY boxen@5.1.2
+| | | +-- UNMET DEPENDENCY ansi-align@3.0.1
+| | | | `-- UNMET DEPENDENCY string-width@4.2.3
+| | | +-- UNMET DEPENDENCY camelcase@6.2.0
+| | | +-- UNMET DEPENDENCY chalk@4.1.2
+| | | | +-- UNMET DEPENDENCY ansi-styles@4.3.0
+| | | | | `-- UNMET DEPENDENCY color-convert@2.0.1
+| | | | |   `-- UNMET DEPENDENCY color-name@1.1.4
+| | | | `-- UNMET DEPENDENCY supports-color@7.2.0
+| | | |   `-- UNMET DEPENDENCY has-flag@4.0.0
+| | | +-- UNMET DEPENDENCY cli-boxes@2.2.1
+| | | +-- UNMET DEPENDENCY string-width@4.2.3
+| | | +-- UNMET DEPENDENCY type-fest@0.20.2
+| | | +-- UNMET DEPENDENCY widest-line@3.1.0
+| | | | `-- UNMET DEPENDENCY string-width@4.2.3
+| | | `-- UNMET DEPENDENCY wrap-ansi@7.0.0
+| | +-- UNMET DEPENDENCY chalk@4.1.2
+| | | +-- UNMET DEPENDENCY ansi-styles@4.3.0
+| | | | `-- UNMET DEPENDENCY color-convert@2.0.1
+| | | |   `-- UNMET DEPENDENCY color-name@1.1.4
+| | | `-- UNMET DEPENDENCY supports-color@7.2.0
+| | |   `-- UNMET DEPENDENCY has-flag@4.0.0
+| | +-- UNMET DEPENDENCY configstore@5.0.1
+| | | +-- UNMET DEPENDENCY dot-prop@5.3.0
+| | | | `-- UNMET DEPENDENCY is-obj@2.0.0
+| | | +-- UNMET DEPENDENCY graceful-fs@4.2.8
+| | | +-- UNMET DEPENDENCY make-dir@3.1.0
+| | | | `-- UNMET DEPENDENCY semver@6.3.0
+| | | +-- UNMET DEPENDENCY unique-string@2.0.0
+| | | | `-- UNMET DEPENDENCY crypto-random-string@2.0.0
+| | | +-- UNMET DEPENDENCY write-file-atomic@3.0.3
+| | | | +-- UNMET DEPENDENCY imurmurhash@0.1.4
+| | | | +-- UNMET DEPENDENCY is-typedarray@1.0.0
+| | | | +-- UNMET DEPENDENCY signal-exit@3.0.5
+| | | | `-- UNMET DEPENDENCY typedarray-to-buffer@3.1.5
+| | | |   `-- UNMET DEPENDENCY is-typedarray@1.0.0
+| | | `-- UNMET DEPENDENCY xdg-basedir@4.0.0
+| | +-- UNMET DEPENDENCY has-yarn@2.1.0
+| | +-- UNMET DEPENDENCY import-lazy@2.1.0
+| | +-- UNMET DEPENDENCY is-ci@2.0.0
+| | | `-- UNMET DEPENDENCY ci-info@2.0.0
+| | +-- UNMET DEPENDENCY is-installed-globally@0.4.0
+| | | +-- UNMET DEPENDENCY global-dirs@3.0.0
+| | | | `-- UNMET DEPENDENCY ini@2.0.0
+| | | `-- UNMET DEPENDENCY is-path-inside@3.0.3
+| | +-- UNMET DEPENDENCY is-npm@5.0.0
+| | +-- UNMET DEPENDENCY is-yarn-global@0.3.0
+| | +-- UNMET DEPENDENCY latest-version@5.1.0
+| | | `-- UNMET DEPENDENCY package-json@6.5.0
+| | |   +-- UNMET DEPENDENCY got@9.6.0
+| | |   | +-- UNMET DEPENDENCY @sindresorhus/is@0.14.0
+| | |   | +-- UNMET DEPENDENCY @szmarczak/http-timer@1.1.2
+| | |   | | `-- UNMET DEPENDENCY defer-to-connect@1.1.3
+| | |   | +-- UNMET DEPENDENCY cacheable-request@6.1.0
+| | |   | | +-- UNMET DEPENDENCY clone-response@1.0.2
+| | |   | | | `-- UNMET DEPENDENCY mimic-response@1.0.1
+| | |   | | +-- UNMET DEPENDENCY get-stream@5.2.0
+| | |   | | | `-- UNMET DEPENDENCY pump@3.0.0
+| | |   | | +-- UNMET DEPENDENCY http-cache-semantics@4.1.0
+| | |   | | +-- UNMET DEPENDENCY keyv@3.1.0
+| | |   | | | `-- UNMET DEPENDENCY json-buffer@3.0.0
+| | |   | | +-- UNMET DEPENDENCY lowercase-keys@2.0.0
+| | |   | | +-- UNMET DEPENDENCY normalize-url@4.5.1
+| | |   | | `-- UNMET DEPENDENCY responselike@1.0.2
+| | |   | |   `-- UNMET DEPENDENCY lowercase-keys@1.0.1
+| | |   | +-- UNMET DEPENDENCY decompress-response@3.3.0
+| | |   | | `-- UNMET DEPENDENCY mimic-response@1.0.1
+| | |   | +-- UNMET DEPENDENCY duplexer3@0.1.4
+| | |   | +-- UNMET DEPENDENCY get-stream@4.1.0
+| | |   | | `-- UNMET DEPENDENCY pump@3.0.0
+| | |   | |   +-- UNMET DEPENDENCY end-of-stream@1.4.4
+| | |   | |   | `-- UNMET DEPENDENCY once@1.4.0
+| | |   | |   `-- UNMET DEPENDENCY once@1.4.0
+| | |   | |     `-- UNMET DEPENDENCY wrappy@1.0.2
+| | |   | +-- UNMET DEPENDENCY lowercase-keys@1.0.1
+| | |   | +-- UNMET DEPENDENCY mimic-response@1.0.1
+| | |   | +-- UNMET DEPENDENCY p-cancelable@1.1.0
+| | |   | +-- UNMET DEPENDENCY to-readable-stream@1.0.0
+| | |   | `-- UNMET DEPENDENCY url-parse-lax@3.0.0
+| | |   |   `-- UNMET DEPENDENCY prepend-http@2.0.0
+| | |   +-- UNMET DEPENDENCY registry-auth-token@4.2.1
+| | |   | `-- UNMET DEPENDENCY rc@1.2.8
+| | |   |   +-- UNMET DEPENDENCY deep-extend@0.6.0
+| | |   |   +-- UNMET DEPENDENCY ini@1.3.8
+| | |   |   +-- UNMET DEPENDENCY minimist@1.2.5
+| | |   |   `-- UNMET DEPENDENCY strip-json-comments@2.0.1
+| | |   +-- UNMET DEPENDENCY registry-url@5.1.0
+| | |   | `-- UNMET DEPENDENCY rc@1.2.8
+| | |   `-- UNMET DEPENDENCY semver@6.3.0
+| | +-- UNMET DEPENDENCY pupa@2.1.1
+| | | `-- UNMET DEPENDENCY escape-goat@2.1.1
+| | +-- UNMET DEPENDENCY semver@7.3.5
+| | | `-- UNMET DEPENDENCY lru-cache@6.0.0
+| | |   `-- UNMET DEPENDENCY yallist@4.0.0
+| | +-- UNMET DEPENDENCY semver-diff@3.1.1
+| | | `-- UNMET DEPENDENCY semver@6.3.0
+| | `-- UNMET DEPENDENCY xdg-basedir@4.0.0
+| `-- UNMET DEPENDENCY yargs@17.2.1
+|   +-- UNMET DEPENDENCY cliui@7.0.4
+|   | +-- UNMET DEPENDENCY string-width@4.2.3
+|   | +-- UNMET DEPENDENCY strip-ansi@6.0.1
+|   | | `-- UNMET DEPENDENCY ansi-regex@5.0.1
+|   | `-- UNMET DEPENDENCY wrap-ansi@7.0.0
+|   |   +-- UNMET DEPENDENCY ansi-styles@4.3.0
+|   |   | `-- UNMET DEPENDENCY color-convert@2.0.1
+|   |   |   `-- UNMET DEPENDENCY color-name@1.1.4
+|   |   +-- UNMET DEPENDENCY string-width@4.2.3
+|   |   `-- UNMET DEPENDENCY strip-ansi@6.0.1
+|   +-- UNMET DEPENDENCY escalade@3.1.1
+|   +-- UNMET DEPENDENCY get-caller-file@2.0.5
+|   +-- UNMET DEPENDENCY require-directory@2.1.1
+|   +-- UNMET DEPENDENCY string-width@4.2.3
+|   | +-- UNMET DEPENDENCY emoji-regex@8.0.0
+|   | +-- UNMET DEPENDENCY is-fullwidth-code-point@3.0.0
+|   | `-- UNMET DEPENDENCY strip-ansi@6.0.1
+|   +-- UNMET DEPENDENCY y18n@5.0.8
+|   `-- UNMET DEPENDENCY yargs-parser@20.2.9
++-- UNMET DEPENDENCY normalize.css@8.0.1
++-- UNMET DEPENDENCY vue@3.2.21
+| +-- UNMET DEPENDENCY @vue/compiler-dom@3.2.21
+| | +-- UNMET DEPENDENCY @vue/compiler-core@3.2.21
+| | | +-- UNMET DEPENDENCY @babel/parser@7.16.2
+| | | +-- UNMET DEPENDENCY @vue/shared@3.2.21
+| | | +-- UNMET DEPENDENCY estree-walker@2.0.2
+| | | `-- UNMET DEPENDENCY source-map@0.6.1
+| | `-- UNMET DEPENDENCY @vue/shared@3.2.21
+| +-- UNMET DEPENDENCY @vue/compiler-sfc@3.2.21
+| | +-- UNMET DEPENDENCY @babel/parser@7.16.2
+| | +-- UNMET DEPENDENCY @vue/compiler-core@3.2.21
+| | +-- UNMET DEPENDENCY @vue/compiler-dom@3.2.21
+| | +-- UNMET DEPENDENCY @vue/compiler-ssr@3.2.21
+| | | +-- UNMET DEPENDENCY @vue/compiler-dom@3.2.21
+| | | `-- UNMET DEPENDENCY @vue/shared@3.2.21
+| | +-- UNMET DEPENDENCY @vue/ref-transform@3.2.21
+| | | +-- UNMET DEPENDENCY @babel/parser@7.16.2
+| | | +-- UNMET DEPENDENCY @vue/compiler-core@3.2.21
+| | | +-- UNMET DEPENDENCY @vue/shared@3.2.21
+| | | +-- UNMET DEPENDENCY estree-walker@2.0.2
+| | | `-- UNMET DEPENDENCY magic-string@0.25.7
+| | +-- UNMET DEPENDENCY @vue/shared@3.2.21
+| | +-- UNMET DEPENDENCY estree-walker@2.0.2
+| | +-- UNMET DEPENDENCY magic-string@0.25.7
+| | | `-- UNMET DEPENDENCY sourcemap-codec@1.4.8
+| | +-- UNMET DEPENDENCY postcss@8.3.11
+| | | +-- UNMET DEPENDENCY nanoid@3.1.30
+| | | +-- UNMET DEPENDENCY picocolors@1.0.0
+| | | `-- UNMET DEPENDENCY source-map-js@0.6.2
+| | `-- UNMET DEPENDENCY source-map@0.6.1
+| +-- UNMET DEPENDENCY @vue/runtime-dom@3.2.21
+| | +-- UNMET DEPENDENCY @vue/runtime-core@3.2.21
+| | | +-- UNMET DEPENDENCY @vue/reactivity@3.2.21
+| | | | `-- UNMET DEPENDENCY @vue/shared@3.2.21
+| | | `-- UNMET DEPENDENCY @vue/shared@3.2.21
+| | +-- UNMET DEPENDENCY @vue/shared@3.2.21
+| | `-- UNMET DEPENDENCY csstype@2.6.18
+| +-- UNMET DEPENDENCY @vue/server-renderer@3.2.21
+| | +-- UNMET DEPENDENCY @vue/compiler-ssr@3.2.21
+| | `-- UNMET DEPENDENCY @vue/shared@3.2.21
+| `-- UNMET DEPENDENCY @vue/shared@3.2.21
++-- UNMET OPTIONAL DEPENDENCY vue-loader-v16@npm:vue-loader@16.8.3
++-- UNMET DEPENDENCY vue-router@4.0.12
+| `-- UNMET DEPENDENCY @vue/devtools-api@6.0.0-beta.20
++-- UNMET DEPENDENCY vuex@4.0.2
+| `-- UNMET DEPENDENCY @vue/devtools-api@6.0.0-beta.20
+`-- UNMET DEPENDENCY vuex-persistedstate@4.1.0
+  +-- UNMET DEPENDENCY deepmerge@4.2.2
+  `-- UNMET DEPENDENCY shvl@2.0.3
+
